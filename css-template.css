@@ -1,11 +1,14 @@
-body {font-family: Times New Roman, Times , Serif; font-size: 100%; background-color: lightgrey}
-h1 {text-align: center;}
-h3 {color: darkblue; font-size: 125%; font-weight: bold;}
+body {font-family: Times New Roman; font-size: 100%; background-color: lightgrey}
+header {border:2px solid rgb(255, 191, 0); text-align: center;}
+/* h1 {text-align: center;} */
+/* h3 {text-align: center;} */
 .clock {text-align: center;}
 .b {font-family: Arial; font-size: 150%; font-weight: bold;}
 .g  {padding-left: 25px; line-height: 150%; font-size: 125%;}
 .h  {padding-left: 25px; line-height: 100%; font-size: 125%;}
 .i  {line-height: 100%; font-size: 125%;}
+#bl {color: darkblue;}
 #item  {margin-left: 50px;}
-#tab   {padding-left: 50px;}
 #para1 {text-align: center;}
+#r  {text-align: right;}
+#tab   {padding-left: 50px;}
