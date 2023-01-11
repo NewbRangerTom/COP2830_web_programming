@@ -1,4 +1,5 @@
-body {font-family: Times New Roman, Times , Serif; font-size: 100%;}
+body {font-family: Times New Roman, Times , Serif; font-size: 100%; background-color: lightgrey}
+h1 {text-align: center;}
 h3 {color: darkblue; font-size: 125%; font-weight: bold;}
 .clock {text-align: center;}
 .b {font-family: Arial; font-size: 150%; font-weight: bold;}
@@ -6,4 +7,5 @@ h3 {color: darkblue; font-size: 125%; font-weight: bold;}
 .h  {padding-left: 25px; line-height: 100%; font-size: 125%;}
 .i  {line-height: 100%; font-size: 125%;}
 #item  {margin-left: 50px;}
-#tab   {margin-left: 50px;}
+#tab   {padding-left: 50px;}
+#para1 {text-align: center;}

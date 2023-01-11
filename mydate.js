@@ -1,7 +1,7 @@
 function GetClock(){
     tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday");
     tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-    tline = new String("Date:&nbsp;&nbsp;");
+    tline = new String("Current Date/Time:&nbsp;&nbsp;");
 
     day = new Date();
     nday = day.getDay();
