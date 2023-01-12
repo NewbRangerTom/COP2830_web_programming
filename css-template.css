@@ -4,11 +4,13 @@ header {border:2px solid rgb(255, 191, 0); text-align: center;}
 /* h3 {text-align: center;} */
 .clock {text-align: center;}
 .b {font-family: Arial; font-size: 150%; font-weight: bold;}
+.divcolor1 {background-color: bisque;}
 .g  {padding-left: 25px; line-height: 150%; font-size: 125%;}
 .h  {padding-left: 25px; line-height: 100%; font-size: 125%;}
-.i  {line-height: 100%; font-size: 125%;}
+.item  {margin-left: 50px;}
+.right {text-align: right;}
+.tab {padding-left: 50px;}
 #bl {color: darkblue;}
-#item  {margin-left: 50px;}
+#i  {font-size: 125%;}
 #para1 {text-align: center;}
-#r  {text-align: right;}
-#tab   {padding-left: 50px;}
+#update {background-color: darkblue; height: 10px;}
