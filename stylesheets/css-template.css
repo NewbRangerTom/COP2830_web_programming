@@ -4,7 +4,7 @@ header {border:2px solid rgb(255, 191, 0); text-align: center;}
 /* nav ul */
 /* nav ul li */
 /* h1 {text-align: center;} */
-/* h3 {text-align: center;} */
+h3 {text-align: center;}
 .clock {text-align: center;}
 .b {font-family: Arial; font-size: 150%; font-weight: bold;}
 .divcolor1 {background-color: bisque;}
