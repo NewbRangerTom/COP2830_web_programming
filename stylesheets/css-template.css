@@ -24,6 +24,7 @@ nav ul {margin: 0 auto; width: 100%; border: 2px;}
 
 /* ID's */
 #bl {color: darkblue;}
+#css_img {border: 0; width: 88px; height: 31px;}
 #i  {font-size: 125%;}
 #para1 {text-align: center;}
 #update {background-color: darkblue; height: 10px;}
