@@ -1,30 +1,31 @@
-/* tag properties */
-body {font-family: Times, sans-serif; font-size: 100%; background-color: lightgrey;}
+/* property tags */
+body {font-family: Times, sans-serif; font-size: 100%; background-color: rgb(214, 228, 248);}
 h3 {text-align: center;}
 header {border:2px solid rgb(255, 191, 0); text-align: center;}
 iframe {border: none; height: 1000px; width: 1000px; display: block;}
 nav {padding: 10px 0px 0px 20px; left: 100%; height: 30px; width: auto; background-color: bisque;}
-nav ul {margin: 0 auto; width: 100%; border: 2px;}
-/* nav ul li */
-/* h1 {text-align: center;} */
 
-
-/* Classes */
+/* classes */
 .b {font-family: Arial; font-size: 150%; font-weight: bold;}
-.clearfix:after {display: block; clear: both;}
 .clock {text-align: center;}
-.divcolor1 {background-color: bisque;}
+.div1 {background-color: rgb(176, 219, 248); font-size: larger; float: left; padding: 200px 0; width: 400px;}
 .g  {padding-left: 25px; line-height: 150%; font-size: 125%;}
 .h  {padding-left: 25px; line-height: 100%; font-size: 125%;}
 .item  {margin-left: 50px;}
-.menu {width: 720px; margin: 0px auto;}
-.menu-wrap {width: 100%; box-shadow: 0px 1px 3px rgba(0,0,0,0.2); background: #3e3436;}
 .right {text-align: right;}
 .tab {padding-left: 50px;}
 
-/* ID's */
-#bl {color: darkblue;}
+/* IDs */
+#bl {color: rgb(1, 1, 71);}
 #css_img {border: 0; width: 88px; height: 31px;}
 #i  {font-size: 125%;}
 #para1 {text-align: center;}
+#section {float: left; padding: 200px 0; width: 250px;}
 #update {background-color: darkblue; height: 10px;}
+
+/* unused */
+nav ul {margin: 0 auto; width: 100%; border: 2px;} 
+
+.clearfix:after {display: block; clear: both;}
+.menu {width: 720px; margin: 0px auto;}
+.menu-wrap {width: 100%; box-shadow: 0px 1px 3px rgba(0,0,0,0.2); background: #3e3436;}
