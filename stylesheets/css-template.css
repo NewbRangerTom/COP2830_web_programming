@@ -8,7 +8,7 @@ nav {padding: 10px 0px 0px 20px; left: 100%; height: 30px; width: auto; backgrou
 /* classes */
 .b {font-family: Arial; font-size: 150%; font-weight: bold;}
 .clock {text-align: center;}
-.div1 {background-color: rgb(176, 219, 248); font-size: larger; float: left; padding: 200px 0; width: 400px;}
+.div1 {background-color: rgb(176, 219, 248); font-size: larger;} /*  float: left; padding: 200px 0; width: 400px; */
 .g  {padding-left: 25px; line-height: 150%; font-size: 125%;}
 .h  {padding-left: 25px; line-height: 100%; font-size: 125%;}
 .item  {margin-left: 50px;}
