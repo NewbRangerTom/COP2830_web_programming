@@ -1,0 +1,100 @@
+reuse old dell laptop for programming
+
+install ubuntu 20.04 lts
+	use ventoy thumbdrive select ubuntu
+	sudo apt-get update
+	sudo apt-get upgrade
+  or
+    sudo apt update && sudo apt upgrade -y
+
+install wlan controller drivers
+	from terminal run:
+		lspci -nn -d 14e4:
+			this will get the pci.id of the wlan controller
+			Broadcom Corporation BCM43xx 802.11xxx Wireless Network Adapter [14e4:43xx] (rev x)
+		sudo apt-get purge bcmwl-kernel-source
+			if you have a preinstalled kernel
+		sudo apt install firmware-b43-installer
+		sudo apt install linux-firmware
+		sudo reboot
+
+install Anaconda
+  download installer from:
+    https://docs.anaconda.com/anaconda/install/
+  open terminal
+    sudo apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 linxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+    bash ~/Downloads/Anaconda3-2021.11-Linux-x86_64.sh    #NOTE: version may different
+    scroll to accept elua
+    press enter to accept default location
+    "yes" to run conda init
+    source ~/.bashrc
+    conda config --set auto_activate_base False or True   #NOTE: set to false
+    enter python to run python shell
+    enter anaconda-navigator to launch Navigator
+    to activate: conda activate <env name>  # dafault is "base"
+    to deactivate: conda deactivate
+    to create environment:
+    	conda create --name <name> <python version>
+    	example:  conda create --name py39 python3.9
+    to update:  conda update conda
+
+install python 3.10
+	sudo add-apt-repository ppa:deadsnakes/ppa
+	sudo apt update
+	sudo apt install python3.10
+  next set default version
+	sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
+	sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 2
+	sudo update-alternatives --config python3
+
+	python3 --version
+	
+	sudo apt install python3-pip
+	
+	sudo pip install <module name>
+		beautifulsoup4
+  set python env path	
+	echo $PATH
+	export PATH=$PATH:<path>
+
+install vscode
+	gcc -v
+	sudo apt-get install build-essential gdb
+	sudo apt install ./Downloads/code_1.63.2-1639562499_amd64.deb
+
+  set the defualt editor
+	sudo update-alternatives --set editor /usr/bin/code
+
+run vscode
+  add extentions
+    Python
+	  Jupyter
+	    Jupyter Keymap
+		Jupyter Notebook Renderers
+	  Pylance
+	AREPL for python
+	C/C++
+	C/C++ Extention Pack
+	  - remote - WSL, SSH, Containers
+	C/C++ Compile Run
+	  The Cpp compiler path (e.g: /usr/bin/g++)
+	Sublime Material Theme
+	Visual Studio Intellicode
+	MySQL
+  update settings.json
+    home/household8/.config/Code/User
+
+create an .bash_aliases file
+	use your prefered text editor (i'm using nano because it's included with ubuntu)
+	nano .bash_aliases
+	alias agi='sudo apt-get install'
+	alias agr='sudo apt-get remove'
+	alias agud='sudo apt-get update'
+	alias agug='sudo apt-get upgrade'
+	alias aguu='sudo apt-get update && sudo apt-get upgrade -y && sudo reboot'
+	alias conbase='conda activate base'
+	alias conpy39='conda activate py39'
+	alias conde='conda deactivate'
+	alias ananav='anaconda navigator'
+	alias jnb='jupyter notebook --notebook-dir=$HOME/Documents/Jupyter_notebooks'
+	alias conjupnb='conda activate base && jupyter notebook --notebook-dir=$HOME/Documents/Jupyter_notebooks'
