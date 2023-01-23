@@ -1,9 +1,13 @@
 /* property tags */
-body {font-family: Times, sans-serif; font-size: 100%; background-color: rgb(214, 228, 248);}
+article {float: left; padding: 30px; width: 60%;}
+body {font-family: Times, serif; font-size: 100%; background-color: white;}
 h3 {text-align: center;}
 header {border:2px solid rgb(255, 191, 0); text-align: center;}
 iframe {border: none; height: 1000px; width: 1000px; display: block;}
-nav {padding: 10px 0px 0px 20px; left: 100%; height: 30px; width: auto; background-color: bisque;}
+li {padding: 5px;}
+section::after {content: ""; display: table; clear: both;}
+ul {list-style-type: none; border: 2px; padding: 0;}
+
 
 /* classes */
 .b {font-family: Arial; font-size: 150%; font-weight: bold;}
@@ -12,6 +16,8 @@ nav {padding: 10px 0px 0px 20px; left: 100%; height: 30px; width: auto; backgrou
 .g  {padding-left: 25px; line-height: 150%; font-size: 125%;}
 .h  {padding-left: 25px; line-height: 100%; font-size: 125%;}
 .item  {margin-left: 50px;}
+.nav1 {padding: 10px 0px 0px 20px; left: 100%; height: 30px; width: auto; background-color: bisque;}
+.nav2 {float: left; width: 25%; padding: 20px; background: white;}
 .right {text-align: right;}
 .tab {padding-left: 50px;}
 
@@ -19,12 +25,13 @@ nav {padding: 10px 0px 0px 20px; left: 100%; height: 30px; width: auto; backgrou
 #bl {color: rgb(1, 1, 71);}
 #css_img {border: 0; width: 88px; height: 31px;}
 #i  {font-size: 125%;}
+#nav {border-right-width: 10px; border-right-color: darkblue; border-right-style: double;}
 #para1 {text-align: center;}
 #section {float: left; padding: 200px 0; width: 250px;}
 #update {background-color: darkblue; height: 10px;}
 
 /* unused */
-nav ul {margin: 0 auto; width: 100%; border: 2px;} 
+ 
 
 .clearfix:after {display: block; clear: both;}
 .menu {width: 720px; margin: 0px auto;}
