@@ -1,14 +1,16 @@
 /* element tags */
-body {font-family: Times, serif; font-size: 100%; background-color: ghostwhite;}
+body {font-family: Times, serif; font-size: 100%;}
 button {font-weight: bolder;}
 h1 {padding-top: 50px;}
-header {background-color: rgb(245, 142, 231); border:5px solid rgb(131, 196, 240); color: floralwhite; text-align: center; height: 200px;}
+header {background-color: rgb(245, 142, 231); border:5px solid rgb(131, 196, 240); color: floralwhite; text-align: center; height: 175px;}
+header#radius {border-top-right-radius: 25% 25%; border-top-left-radius: 25% 25%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;}
 
 
 /* classes */
 .clock {text-align: center;}
 .div1 {background-color: rgb(245, 142, 231); font-size: larger; width: 350px}
 .nav_h {padding: 5px 0px 0px 20px; left: 100%; height: 40px; width: auto; background-color: rgb(131, 196, 240);}
+.right {float: right; padding-right: 20px;}
 
 
 /* id's */
@@ -18,4 +20,3 @@ header {background-color: rgb(245, 142, 231); border:5px solid rgb(131, 196, 240
 #button_border:hover {border-width: 3px; border-style: solid; border-color: rgb(245, 142, 231);}
 #hide {opacity: 0;}
 #hide:hover {opacity: 1;}
-#radius {border-top-right-radius: 25% 25%; border-top-left-radius: 25% 25%; border-bottom-right-radius: 30% 75%; border-bottom-left-radius: 30% 75%;}

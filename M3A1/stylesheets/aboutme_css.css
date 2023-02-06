@@ -1,9 +1,10 @@
 /* element tags */
 article {float: left; padding: 30px; width: 55%;}
-aside {float: left; padding: 0px; width: 25%;}
-body {font-family: Times, serif; font-size: 100%; background-color: ghostwhite;}
+body {font-family: Times, serif; font-size: 100%;}
 button {font-weight: bolder;}
-header {background-color: rgb(245, 142, 231); border:5px solid rgb(131, 196, 240); color: floralwhite; text-align: center;}
+header {background-color: rgb(245, 142, 231); border:5px solid rgb(131, 196, 240); color: floralwhite; text-align: center; height: 175px;}
+header#radius {border-top-right-radius: 25% 25%; border-top-left-radius: 25% 25%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;}
+h1 {padding-top: 50px;}
 li {padding: 5px;}
 section::after {content: ""; display: table; clear: both;}
 ul {border: 2px; padding: 0;}
@@ -25,19 +26,11 @@ ul {border: 2px; padding: 0;}
 /* id's */
 #bl {color: rgb(1, 1, 71);}
 #block {padding-left: 36%;}
-#css_img {border: 0; width: 88px; height: 31px;}
+#button_border { border: 0; padding-top: 5px;}
+#button_border:hover {border-width: 3px; border-style: solid; border-color: rgb(245, 142, 231);}
 #hide {opacity: 0;}
 #hide:hover {opacity: 1;}
 #nav_border {border-right-width: 10px; border-right-color: rgb(247, 42, 230); border-right-style: double; border-end-end-radius:  50% 50%; border-start-start-radius: 25% 25%;}
-#photo {background-color: rgb(248, 151, 235); float: right; margin-top: -130px; box-shadow: 0 1px 10px; -moz-box-shadow: 0 1px 10px #333;
-    -webkit-box-shadow: 0  1px 10px #333; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;
-    width: 350px; height: 420px;}
-#photo div {background-color: rgb(131, 196, 240); margin: 5px auto 0px auto; border-radius: 2px; -moz-border-radius: 2px;
-        -webkit-border-radius: 2px; width: 310px; height: 380px; text-align: center;}
-#photo div h3 {color: rgb(131, 196, 240); font-size: 25px; line-height: 5px; padding: 20px 0 0 0;}
-#radius {border-top-right-radius: 25% 25%; border-top-left-radius: 25% 25%; border-bottom-right-radius: 30% 75%; border-bottom-left-radius: 30% 75%;}
-#radius_cm {border-top-right-radius: 25% 25%; border-top-left-radius: 25% 25%; border-bottom-right-radius: 30% 75%; border-bottom-left-radius: 30% 75%;}
-#secret {margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 #update {background-color: darkblue; height: 10px;}
 
 

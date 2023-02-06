@@ -1,10 +1,13 @@
 /* element tags */
-form {float: left; padding: 30px; width: 55%;}
-body {font-family: Times, serif; font-size: 100%; background-color: ghostwhite;}
+fieldset {margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40%; padding-left: 50px;}
+form {float: left; padding: 30px;}
+body {font-family: Times, serif; font-size: 100%;}
 button {font-weight: bolder;}
-header {background-color: rgb(245, 142, 231); border:5px solid rgb(131, 196, 240); color: floralwhite; text-align: center;}
+header {background-color: rgb(245, 142, 231); border:5px solid rgb(131, 196, 240); color: floralwhite; text-align: center; height: 175px;}
+header#radius {border-top-right-radius: 25% 25%; border-top-left-radius: 25% 25%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;}
+h1 {padding-top: 50px;}
 li {padding: 5px;}
-section::after {content: ""; display: table; clear: both;}
+section::after {content: ""; display: table; clear: both; height: 175px;}
 ul {border: 2px; padding: 0;}
 * {box-sizing: border-box;}
 
@@ -17,7 +20,7 @@ ul {border: 2px; padding: 0;}
 .nav_v ul {list-style-type: none; border: 2px; padding: 0;}
 .responsive {padding: 0 6px; float: left; width: 24.99999%;}
 .right {float: right; padding-right: 20px;}
-.tab {padding-left: 50px;}
+.tab {padding-left: 150px;}
 
 
 /* id's */
@@ -28,7 +31,6 @@ ul {border: 2px; padding: 0;}
 #hide {opacity: 0;}
 #hide:hover {opacity: 1;}
 #nav_border {border-right-width: 10px; border-right-color: rgb(247, 42, 230); border-right-style: double; border-end-end-radius:  50% 50%; border-start-start-radius: 25% 25%;}
-#radius {border-top-right-radius: 25% 25%; border-top-left-radius: 25% 25%; border-bottom-right-radius: 30% 75%; border-bottom-left-radius: 30% 75%;}
 #update {background-color: darkblue; height: 10px;}
 
 

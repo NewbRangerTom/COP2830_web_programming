@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<title>Thomas Werstlein</title>
-		<meta name="author" content="Thomas 'NewbRangerTom' Werstlein">
-		<meta name="description" content="html document created for COP2830 assignment.">
+		<title>Thomas Werstlein, Mailing List</title>
 		<meta charset="utf-8">
-		<meta http-equiv="refresh" content="90">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="file_name" content="listform.html">
-		<!-- styling -->
+		<meta name="author" content="Thomas/Tallia 'NewbRangerTom' Werstlein">
+		<meta name="description" content="html document created for COP2830 assignment.">
+		<!-- updated 6 February 2023 -->
 		<link rel="stylesheet" href="../stylesheets/listform_css.css">
 		<!-- favicon browser tab icon -->
-		<link rel="icon" sizes="192x192" href="./images/favicon/android-chrome-192x192.png">
-		<link rel="icon" sizes="512x512" href="./images/favicon/android-chrome-512x512.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-16x16.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-32x32.png">
-		<link rel="manifest" href="./images/favicon/site.webmanifest">
+		<link rel="icon" sizes="192x192" href="../images/favicon/android-chrome-192x192.png">
+		<link rel="icon" sizes="512x512" href="../images/favicon/android-chrome-512x512.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-16x16.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-32x32.png">
+		<link rel="manifest" href="../images/favicon/site.webmanifest">
 	</head>
 	<body>
         <header id="radius">
@@ -27,30 +26,47 @@
 			<nav class="nav_v" id="nav_border">
 				<ul>
                     <li><button id="button_border" type="button" onclick="document.location='../home.html'"><img src="http://irsc.chadcalvert.com/COP2830/img/home.gif"></button></li>
-                    <li><button type="button" onclick="document.location='aboutme.html'">About Me</button></li>
-                    <li><button type="button" onclick="document.location='./adrbook/contact.html'">Contact Me</button></li>
+                    <li><button type="button" onclick="document.location='../aboutme.html'">About Me</button></li>
+                    <li><button type="button" onclick="document.location='./contact.html'">Contact Me</button></li>
                 </ul>
 			</nav>
-			<div id="secret">
-				<form>
-					<label for="fname">First name:</label><br>
-					<input type="text" id="fname" name="fname" value="Franken"><br><br>
-					<label for="lname">Last name:</label><br>
-					<input type="text" id="lname" name="lname" value="Stein"><br><br>
-					<label for="email">E-Mail Address:</label><br>
-					<input type="text" id="email" name="email" value="Frankenstein@email.domain"><br><br>
-					<input type="submit" value="Submit"><input type="reset" value="Reset">
+			<div>
+				<form class="tab" action="http://irsc.chadcalvert.com/COP2830/add2list.php" method="get">
+					<fieldset>
+						<legend>Your Info:</legend>
+						<p><label for="fname">First name:</label>
+						<input id="input" type="text" id="fname" name="firstname" placeholder="Franken" maxlength="20" size="12"></p>
+						<p><label for="lname">Last name:</label>
+						<input type="text" id="lname" name="lastname" placeholder="Stein" maxlength="20" size="12"></p>
+						<p><label for="email">Email address:</label>
+						<input type="text" id="email" name="emailadr" placeholder="Frankenstein@email.domain" maxlength="40" size="12"></p>
+						<p>Gender: 
+							<input type="radio" id="male" name="gender" value="Male">
+							<label for="male">Male</label>
+							<input type="radio" id="female" name="gender" value="Female">
+							<label for="female">Female</label>
+							<input type="radio" id="nonbinary" name="gender" value="Non-Binary">
+							<label for="nonbinary">Non-Binary</label>
+						</p>
+						<p>List me in your public directory: <input type="checkbox" id="public" name="public" value="y"></p>
+						<p><input type="submit" value="Add my data">   |   <input type="reset" value="Reset form"></p>
+					</fieldset>
 				</form>
 			</div>
         </section>
 		<hr id="update">
+		<div class="left">
+			<a href="../secret.html">
+				<img id="hide" src="../images/transgender-symbol.png" width="30" height="30" alt="transgender symbol">
+			</a>
+		</div>
 		<div class="right">
-			<em>updated on 1 Feb 2023 by Thomas "NewbRangerTom" Werstlein</em>
+			<em>updated on 6 Feb 2023 by Thomas "NewbRangerTom" Werstlein</em>
 			&lt;<a href="mailto:werstleinta@mail.irsc.edu">werstleinta@mail.irsc.edu</a>&gt;
 		</div>
 		<footer>
 			<p class="clock" id="GetClock"></p>
 		</footer>
-		<script src="./scripts/mydate.js"></script>
+		<script src="../scripts/mydate.js"></script>
 	</body>
 </html>
