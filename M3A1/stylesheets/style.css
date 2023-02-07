@@ -2,16 +2,23 @@
 article {float: left; padding: 30px; width: 55%;}
 body {font-family: Times, serif; font-size: 100%;}
 button {font-weight: bolder;}
-header {background-color: rgb(245, 142, 231); border:5px solid rgb(131, 196, 240); color: floralwhite; text-align: center; height: 225px;}
-header#radius {border-top-right-radius: 25% 25%; border-top-left-radius: 25% 25%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;}
+fieldset {margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40%; padding-left: 50px;}
+form {float: left; padding: 30px;}
+header {background-color: rgb(245, 142, 231); border:5px solid rgb(131, 196, 240); color: floralwhite; text-align: center;}
+header.radius {border-top-right-radius: 25% 25%; border-top-left-radius: 25% 25%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;}
+header#height_1 {height: 175px;}
+header#height_2 {height: 225px;}
+h1#padding_50 {padding-top: 50px;}
 li {padding: 5px;}
-section::after {content: ""; display: table; clear: both;}
+section:not(#height) {content: ""; display: table; clear: both;}
+section#height::after {content: ""; display: table; clear: both; height: 175px;}
 ul {border: 2px; padding: 0;}
 * {box-sizing: border-box;}
 
 /* classes */
 .clock {text-align: center;}
 .div1 {padding-top: 10px;}
+.div_about {background-color: lightgrey; font-size: larger; width: 350px}
 .heart {background-color: red; display: inline-block; height: 60px; margin: 0 10px; position: relative; top: 0; transform: rotate(-45deg); width: 60px;}
 .heart::before,
 .heart::after {content: ""; background-color: red; border-radius: 50%; height: 60px; position: absolute; width: 60px;}
@@ -19,16 +26,22 @@ ul {border: 2px; padding: 0;}
 .heart::after {left: 25px; top: 0;}
 .larger {font-size: larger;}
 .left {float: left;}
-.nav_v {float: left; width: 15%; padding: 20px; padding-left: 40px; background: rgb(149, 137, 255);}
+.nav_h {padding: 5px 0px 0px 20px; left: 100%; height: 40px; width: auto; background-color: gray;}
+.nav_v_am {float: left; width: 15%; padding: 20px; padding-left: 30px; background: rgb(149, 137, 255);}
+.nav_v_am ul {list-style-type: none; border: 2px; padding: 0;}
+.nav_v {float: left; width: 17%; padding: 20px; padding-left: 40px; background: rgb(149, 137, 255);}
 .nav_v ul {list-style-type: none; border: 2px; padding: 0;}
 .responsive {padding: 0 6px; float: left; width: 24.99999%;}
 .right {float: right; padding-right: 20px;}
 .tab {padding-left: 50px;}
+.tab_ls {padding-left: 150px;}
 
 
 /* id's */
-#bl {color: rgb(1, 1, 71);}
+#bl {color: rgb(0, 0, 218);}
 #block {padding-left: 36%;}
+#button_border { border: 0; padding-top: 5px;}
+#button_border:hover {border-width: 3px; border-style: solid; border-color: rgb(245, 142, 231);}
 #hide {opacity: 0;}
 #hide:hover {opacity: 1;}
 #hr1 {background-color: darkblue; height: 10px;}
