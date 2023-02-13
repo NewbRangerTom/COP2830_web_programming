@@ -22,7 +22,7 @@
             <h1 id="padding_50">Mailing List Sign Up</h1>
         </header>
 		<hr>
-		<section id="height">
+		<div id="height">
 			<nav class="nav_v" id="nav_border">
 				<ul>
                     <li><button id="button_border" type="button" onclick="document.location='../home.html'"><img src="http://irsc.chadcalvert.com/COP2830/img/home.gif"></button></li>
@@ -30,30 +30,27 @@
                     <li><button type="button" onclick="document.location='./contact.html'">Contact Me</button></li>
                 </ul>
 			</nav>
-			<div>
+			<section class="form">
 				<form class="tab_ls" action="http://irsc.chadcalvert.com/COP2830/add2list.php" method="get">
 					<fieldset>
 						<legend>Your Info:</legend>
 						<p><label for="fname">First name:</label>
-						<input id="input" type="text" id="fname" name="firstname" placeholder="Franken" maxlength="20" size="12"></p>
+						<input id="input" type="text" name="firstname" placeholder="Franken" maxlength="20" size="12"></p>
 						<p><label for="lname">Last name:</label>
 						<input type="text" id="lname" name="lastname" placeholder="Stein" maxlength="20" size="12"></p>
 						<p><label for="email">Email address:</label>
 						<input type="text" id="email" name="emailadr" placeholder="Frankenstein@email.domain" maxlength="40" size="12"></p>
 						<p>Gender: 
-							<input type="radio" id="male" name="gender" value="Male">
-							<label for="male">Male</label>
-							<input type="radio" id="female" name="gender" value="Female">
-							<label for="female">Female</label>
-							<input type="radio" id="nonbinary" name="gender" value="Non-Binary">
-							<label for="nonbinary">Non-Binary</label>
+							<label for="male">Male<input type="radio" id="male" name="gender" value="Male"></label>
+							<label for="female">Female<input type="radio" id="female" name="gender" value="Female"></label>
+							<label for="nonbinary">Non-Binary<input type="radio" id="nonbinary" name="gender" value="Non-Binary"></label>
 						</p>
 						<p>List me in your public directory: <input type="checkbox" id="public" name="public" value="y"></p>
-						<p><input type="submit" value="Add my data">   |   <input type="reset" value="Reset form"></p>
+						<p><input type="submit" value="Add my data"><input type="reset" value="Reset form"></p>
 					</fieldset>
 				</form>
-			</div>
-        </section>
+			</section>
+        </div>
 		<hr id="hr1">
 		<div class="left">
 			<a href="../secret.html">
