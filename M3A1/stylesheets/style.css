@@ -1,18 +1,21 @@
 /* element tags */
-article {float: left; padding: 30px; width: 55%;}
+article {float: left; padding: 30px; width: 65%;}
 body {font-family: Times, serif; font-size: 100%;}
 button {font-weight: bolder;}
-fieldset {margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 40%; padding-left: 50px;}
+fieldset {margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 450px; height: 285px; padding-left: 50px;}
 form {float: left; padding: 30px;}
 /* header {background-color: rgb(245, 142, 231); border:5px solid rgb(131, 196, 240); color: floralwhite; text-align: center;} */
-header {border:5px solid; text-align: center;}
+header {border:5px solid; text-align: center; margin-left: 150px; margin-right: 150px;}
 header.radius {border-top-right-radius: 25% 25%; border-top-left-radius: 25% 25%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;}
 header#height_1 {height: 175px;}
 header#height_2 {height: 225px;}
 h1#padding_50 {padding-top: 50px;}
+h2#header_margin {margin-top: 60px;}
+input {height: 20px; border: 1px solid; padding-right: 15px; margin-right: 15px;}
 li {padding: 5px;}
 section:not(#height) {content: ""; display: table; clear: both;}
 section#height::after {content: ""; display: table; clear: both; height: 175px;}
+div#height::after {content: ""; display: table; clear: both; height: 175px;}
 ul {border: 2px; padding: 0;}
 * {box-sizing: border-box;}
 
@@ -20,17 +23,18 @@ ul {border: 2px; padding: 0;}
 .clock {text-align: center;}
 .div1 {padding-top: 10px;}
 .div_about {/*background-color: lightgrey;*/ font-size: larger; width: 350px}
-.heart {/*background-color: red;*/ border: 2px solid; display: inline-block; height: 60px; margin: 0 10px; position: relative; top: 0; transform: rotate(-41deg); width: 60px;}
+.form {position: absolute; top: 350px; margin-left: 45%;}
+.heart {/*background-color: red;*/ border: 1px solid; display: inline-block; height: 60px; margin: 0 10px; position: relative; top: 0; transform: rotate(-35deg); width: 60px;}
 .heart::before,
-.heart::after {content: ""; /*background-color: red;*/ border: 2px solid; border-radius: 50%; height: 60px; position: absolute; width: 60px;}
-.heart::before {top: -40px; right: -5px;}
-.heart::after {left: 40px; bottom: -5px;}
+.heart::after {content: ""; /*background-color: red;*/ border: 1px solid; border-radius: 50%; height: 60px; position: absolute; width: 60px;}
+.heart::before {top: -35px; right: 0px;}
+.heart::after {left: 35px; bottom: 0px;}
 .larger {font-size: larger;}
 .left {float: left;}
 .nav_h {padding: 5px 0px 0px 20px; left: 100%; height: 40px; width: auto; /*background-color: gray;*/}
 .nav_v_am {float: left; width: 20%; padding: 20px; padding-left: 30px; /*background: rgb(149, 137, 255);*/}
 .nav_v_am ul {list-style-type: none; border: 2px; padding: 0;}
-.nav_v {float: left; width: 17%; padding: 20px; padding-left: 40px; /*background: rgb(149, 137, 255);*/}
+.nav_v {float: left; width: 250px; padding: 20px; padding-left: 40px; /*background: rgb(149, 137, 255);*/}
 .nav_v ul {list-style-type: none; border: 2px; padding: 0;}
 .responsive {padding: 0 6px; float: left; width: 24.99999%;}
 .right {float: right; padding-right: 20px;}

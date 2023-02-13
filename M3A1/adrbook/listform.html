@@ -5,63 +5,62 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="file_name" content="listform.html">
-		<meta name="author" content="Thomas/Tallia 'NewbRangerTom' Werstlein">
-		<meta name="description" content="html document created for COP2830 assignment.">
-		<!-- updated 7 February 2023 -->
+<!-- Project Constraint T -->
+		<meta name="author" content="Thomas 'NewbRangerTom' Werstlein">
+		<meta name="description" content="html document created for COP2830 assignment M3A1.">
+<!-- updated 13 February 2023 -->
 		<link rel="stylesheet" href="../stylesheets/style.css">
-		<!-- favicon browser tab icon -->
-		<link rel="icon" sizes="192x192" href="../images/favicon/android-chrome-192x192.png">
-		<link rel="icon" sizes="512x512" href="../images/favicon/android-chrome-512x512.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-16x16.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-32x32.png">
-		<link rel="manifest" href="../images/favicon/site.webmanifest">
 	</head>
 	<body>
         <header class="radius" id="height_1">
-            <h1 id="padding_50">Mailing List Sign Up</h1>
+<!--------- Project Constraint M -->
+            <h2 id="header_margin">Join My Mailing List</h2>
         </header>
 		<hr>
-		<section id="height">
+		<div id="height">
 			<nav class="nav_v" id="nav_border">
 				<ul>
-                    <li><button id="button_border" type="button" onclick="document.location='../home.html'"><img src="http://irsc.chadcalvert.com/COP2830/img/home.gif"></button></li>
+<!-- Project Constraint P -->
+					<li><button id="button_border" type="button" onclick="document.location='../home.html'"><img src="http://irsc.chadcalvert.com/COP2830/img/home.gif"></button></li>
                     <li><button type="button" onclick="document.location='../aboutme.html'">About Me</button></li>
                     <li><button type="button" onclick="document.location='./contact.html'">Contact Me</button></li>
                 </ul>
 			</nav>
-			<div>
+			<section class="form">
+<!-- Project Constraint N -->
+<!----------  Bullet 1 -->
 				<form class="tab_ls" action="http://irsc.chadcalvert.com/COP2830/add2list.php" method="get">
 					<fieldset>
 						<legend>Your Info:</legend>
+<!----------  Bullet 3 -->
 						<p><label for="fname">First name:</label>
-						<input id="input" type="text" id="fname" name="firstname" placeholder="Franken" maxlength="20" size="12"></p>
+<!----------  Bullet 2 -->
+						<input id="input" type="text" name="firstname" placeholder="Franken" maxlength="20" size="12"></p>
+<!----------  Bullet 3 -->
 						<p><label for="lname">Last name:</label>
+<!----------  Bullet 2 -->
 						<input type="text" id="lname" name="lastname" placeholder="Stein" maxlength="20" size="12"></p>
+<!----------  Bullet 3 -->				
 						<p><label for="email">Email address:</label>
+<!----------  Bullet 2 -->
 						<input type="text" id="email" name="emailadr" placeholder="Frankenstein@email.domain" maxlength="40" size="12"></p>
-						<p>Gender: 
-							<input type="radio" id="male" name="gender" value="Male">
-							<label for="male">Male</label>
-							<input type="radio" id="female" name="gender" value="Female">
-							<label for="female">Female</label>
-							<input type="radio" id="nonbinary" name="gender" value="Non-Binary">
-							<label for="nonbinary">Non-Binary</label>
+						<p>Gender:
+<!----------  Bullet 4 -->
+							<label for="male">Male<input type="radio" id="male" name="gender" value="Male"></label>
+							<label for="female">Female<input type="radio" id="female" name="gender" value="Female"></label>
 						</p>
+<!----------  Bullet 5 -->
 						<p>List me in your public directory: <input type="checkbox" id="public" name="public" value="y"></p>
-						<p><input type="submit" value="Add my data">   |   <input type="reset" value="Reset form"></p>
+<!----------  Bullet 6 -->
+						<p><input type="submit" value="Add my data"><input type="reset" value="Reset form"></p>
 					</fieldset>
 				</form>
-			</div>
-        </section>
+			</section>
+        </div>
 		<hr id="hr1">
-		<div class="left">
-			<a href="../secret.html">
-				<img id="hide" src="../images/transgender-symbol.png" width="30" height="30" alt="transgender symbol">
-			</a>
-		</div>
 		<div class="right">
-			<em>updated on 7 Feb 2023 by Thomas "NewbRangerTom" Werstlein</em>
+			<em>updated on 13 Feb 2023 by Thomas "NewbRangerTom" Werstlein</em>
+<!-- Project Constraint S -->
 			<table>
 				<tr>
 					<th>Email:</th>
@@ -70,8 +69,8 @@
 			</table>
 		</div>
 		<footer>
-			<p class="clock" id="GetClock"></p>
+<!-- Project Constraint Q -->
+			<p class="clock"><p class="clock"><button id="button_border" type="button" onclick="document.location='../home.html'"><img src="http://irsc.chadcalvert.com/COP2830/img/home.gif">to my Home Page</button></p></p>
 		</footer>
-		<script src="../scripts/mydate.js"></script>
 	</body>
 </html>
