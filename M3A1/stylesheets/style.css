@@ -10,7 +10,10 @@ header.radius {border-top-right-radius: 25% 25%; border-top-left-radius: 25% 25%
 header#height_1 {height: 175px;}
 header#height_2 {height: 225px;}
 h1#padding_50 {padding-top: 50px;}
+<<<<<<< HEAD
 h2#header_margin {margin-top: 60px;}
+=======
+>>>>>>> f4b39e123d79a72b735953cf484aed23fad990b5
 input {height: 20px; border: 1px solid; padding-right: 15px; margin-right: 15px;}
 li {padding: 5px;}
 section:not(#height) {content: ""; display: table; clear: both;}
@@ -24,7 +27,11 @@ ul {border: 2px; padding: 0;}
 .div1 {padding-top: 10px;}
 .div_about {/*background-color: lightgrey;*/ font-size: larger; width: 350px}
 .form {position: absolute; top: 350px; margin-left: 45%;}
+<<<<<<< HEAD
 .heart {/*background-color: red;*/ border: 1px solid; display: inline-block; height: 60px; margin: 0 10px; position: relative; top: 0; transform: rotate(-35deg); width: 60px;}
+=======
+.heart {/*background-color: red;*/ border: 2px solid; display: inline-block; height: 60px; margin: 0 10px; position: relative; top: 0; transform: rotate(-41deg); width: 60px;}
+>>>>>>> f4b39e123d79a72b735953cf484aed23fad990b5
 .heart::before,
 .heart::after {content: ""; /*background-color: red;*/ border: 1px solid; border-radius: 50%; height: 60px; position: absolute; width: 60px;}
 .heart::before {top: -35px; right: 0px;}
