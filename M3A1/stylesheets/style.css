@@ -21,6 +21,8 @@ ul {border: 2px; padding: 0;}
 * {box-sizing: border-box;}
 
 /* classes */
+.button_border { border: 0; padding-top: 5px;}
+.button_border:hover {border-width: 3px; border-style: solid; /*border-color: rgb(245, 142, 231);*/}
 .clock {text-align: center;}
 .div1 {padding-top: 10px;}
 .div_about {/*background-color: lightgrey;*/ font-size: larger; width: 350px}
@@ -46,8 +48,6 @@ ul {border: 2px; padding: 0;}
 /* id's */
 /* #bl {color: rgb(0, 0, 218);} */
 #block {padding-left: 36%;}
-#button_border { border: 0; padding-top: 5px;}
-#button_border:hover {border-width: 3px; border-style: solid; /*border-color: rgb(245, 142, 231);*/}
 #hide {opacity: 0;}
 #hide:hover {opacity: 1;}
 #hr1 {/*background-color: darkblue;*/ height: 10px; border: 1px solid;}
