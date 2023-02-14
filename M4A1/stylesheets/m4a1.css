@@ -1,0 +1,12 @@
+/* default.html */
+body {background-color: yellow;}
+h1, h2, h4 {text-align: center;}
+h3, h5, h6 {text-align: left;}
+a {text-decoration: overline;}
+a:link {color: green;}
+a:visited {color: red;}
+a:hover {color: blue; font-weight: bolder;}
+a:active {color: blue; font-weight: normal;}
+
+.banner {background-image: url("http://irsc.chadcalvert.com/COP2830/img/IRCC-Logo.gif"); background-repeat: repeat-x;}
+.pad {padding-top: 120px;}
