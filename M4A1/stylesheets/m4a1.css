@@ -8,5 +8,5 @@ a:visited {color: red;}
 a:hover {color: blue; font-weight: bolder;}
 a:active {color: blue; font-weight: normal;}
 
-.banner {background-image: url("http://irsc.chadcalvert.com/COP2830/img/IRCC-Logo.gif"); background-repeat: repeat-x;}
+.banner {position: fixed; width: 100%; height: 100px; background-image: url("http://irsc.chadcalvert.com/COP2830/img/IRCC-Logo.gif"); background-repeat: repeat-x; top: 0;}
 .pad {padding-top: 120px;}
