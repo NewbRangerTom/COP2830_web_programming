@@ -54,6 +54,9 @@ ul {border: 2px; padding: 0;}
 #nav_border {border-right-width: 10px; /*border-right-color: rgb(247, 42, 230);*/ border-right-style: double; border-end-end-radius:  50% 50%; border-start-start-radius: 25% 25%;}
 #secret {margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 
+[data-columns] {display: grid; grid-gap: 2px; padding: 2px; margin: 0 0 2px 0;}
+[data-columns] > div {height: 100px; background: white;}
+[data-columns="3"] {background: #9CCC65; grid-template-columns: repeat(3, 1fr);}
 
 @media only screen and (max-width: 700px) {.responsive {width: 49.99999%; margin: 6px 0;}}
 @media only screen and (max-width: 500px) {.responsive {width: 100%;}}

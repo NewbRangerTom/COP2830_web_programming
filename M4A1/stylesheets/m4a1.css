@@ -1,5 +1,16 @@
-/* default.html */
+/* Assignment M4A1 Project Constraint C */
+/* bullet 1 */
+div.banner {position: fixed; 
+            width: 98.3%; 
+            height: 100px; 
+            margin-top: 12px; 
+            background-image: url("http://irsc.chadcalvert.com/COP2830/img/IRCC-Logo.gif"); 
+            background-repeat: repeat-x; 
+            top: 0;}
+/* bullt 2 */
 body {background-color: yellow;}
+/* bullet 3 */
+div.pad_top_120 {padding-top: 120px;}
 h1, h2, h4 {text-align: center;}
 h3, h5, h6 {text-align: left;}
 a {text-decoration: overline;}
@@ -7,11 +18,8 @@ a:link {color: green;}
 a:visited {color: red;}
 a:hover {color: blue; font-weight: bolder;}
 a:active {color: blue; font-weight: normal;}
-div.banner {position: fixed; width: 98.3%; height: 100px; margin-top: 12px; background-image: url("http://irsc.chadcalvert.com/COP2830/img/IRCC-Logo.gif"); background-repeat: repeat-x; top: 0;}
+hr.clear {clear: both}
+div table {width: 100%;}
+div table td {width: 50%;}
 
 .font_var {font-variant: small-caps;}
-.pad_top_120 {padding-top: 120px;}
-
-[data-columns] {display: grid; grid-gap: 2px; padding: 2px; margin: 0 0 2px 0;}
-[data-columns] > div {height: 100px; background: white;}
-[data-columns="3"] {background: #9CCC65; grid-template-columns: repeat(3, 1fr);}
