@@ -1,14 +1,16 @@
 /* Assignment M4A1 Project Constraint C */
-/* bullet 1 */
-div.banner {position: fixed; 
-            width: 98.3%; 
-            height: 100px; 
-            margin-top: 12px; 
-            background-image: url("http://irsc.chadcalvert.com/COP2830/img/IRCC-Logo.gif"); 
-            background-repeat: repeat-x; 
-            top: 0;}
 /* bullt 2 */
 body {background-color: yellow;}
+/* bullet 1 */
+div.banner {position: fixed;
+    z-index: 1;
+    width: 98.3%;
+    height: 100px;
+    margin-top: 12px;
+    background-color: inherit;
+    background-image: url("http://irsc.chadcalvert.com/COP2830/img/IRCC-Logo.gif");
+    background-repeat: repeat-x;
+    top: 0;}
 /* bullet 3 */
 div.pad_top_120 {padding-top: 120px;}
 h1, h2, h4 {text-align: center;}
