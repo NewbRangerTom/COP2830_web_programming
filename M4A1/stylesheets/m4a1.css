@@ -2,7 +2,7 @@
 /* bullt 2 */
 body {background-color: yellow;}
 /* bullet 1 */
-div.banner {position: fixed;
+div#banner {position: fixed;
             left: -2px;
             z-index: 1;
             width: 100%;
