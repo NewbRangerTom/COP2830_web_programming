@@ -12,7 +12,7 @@ div#banner {position: fixed;
             background-repeat: repeat-x;
             top: 0;}
 /* bullet 3 */
-div.pad_top_120 {padding-top: 120px;}
+div#mar_top_120 {margin-top: 120px;}
 h1, h2, h4 {text-align: center;}
 h3, h5, h6 {text-align: left;}
 a {text-decoration: overline;}
