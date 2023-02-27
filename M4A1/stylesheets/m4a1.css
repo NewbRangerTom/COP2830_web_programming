@@ -1,6 +1,7 @@
-/* Assignment M4A1 Project Constraint C */
-/* bullt 2 */
-body {background-color: yellow;}
+/* Assignment M4A1 Project Constraint C 
+   Author:      Thomas Werstlein
+   Date:        27 Feb 2023 */
+
 /* bullet 1 */
 div#banner {position: fixed;
             left: -2px;
@@ -11,17 +12,28 @@ div#banner {position: fixed;
             background-image: url("http://irsc.chadcalvert.com/COP2830/img/IRCC-Logo.gif");
             background-repeat: repeat-x;
             top: 0;}
+
+/* bullt 2 */
+body {background-color: yellow;}
+
 /* bullet 3 */
 div#mar_top_120 {margin-top: 120px;}
+
+/* bullet 4 */
 h1, h2, h4 {text-align: center;}
 h3, h5, h6 {text-align: left;}
+
+/* bullet 5 */
 a {text-decoration: overline;}
 a:link {color: green;}
 a:visited {color: red;}
 a:hover {color: blue; font-weight: bolder;}
-a:active {color: blue; font-weight: normal;}
-hr.clear {clear: both}
-div table {width: 100%;}
-div table td {width: 50%;}
+a:active {color: blue;}
 
-.font_var {font-variant: small-caps;}
+/* Project Constraint D bullet 4 */
+hr.clear {clear: both}
+
+/* Project Constraint: D bullet 5 & E bullet 9 */
+div table {width: 100%;}
+div table td#left {width: 50%; text-align: left;}
+div table td#right {width: 50%; text-align: right;}
