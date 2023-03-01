@@ -3,29 +3,25 @@
 // Date:       Mar 2023 
 
 function Prompt(){
+    
+    // if (typeof UI !== "string") 
+    var UI = window.prompt("Script Prompt:\nEnter a whole number to test as a prime number:");
+    var TV = parseInt(UI);  // TV = test value
     var text = "";
-    var HITS = 0;
-    var UI = prompt("");
-    var TV = parseInt(UI);
-    var DD = TV;
-    while (DD > 0){
-        if (TV % DD == 0) {
-            HITS += 1;
-            DD -= 1;
-            if (HITS > 2) {
-                text = UI += " is not a prime number";
-              }
-            else {
-                text = UI += " is a prime number";
-              }
-            }   
+    var HITS = 0;           // number of successful int divisions
+    var DD = TV;            // division denominator 
+    for (var i = 1; i < DD; DD--){
+        if (TV % DD == 0){
+        HITS += 1;
         }
-    document.getElementById("Prompt").innerHTML = text;
-    document.getElementById("Prompt").style.setProperty("background-color", "lightgrey");
-    // document.getElementById("Prompt")
-    // document.getElementById("Prompt")
-    // document.getElementById("Prompt")
-    // document.getElementById("Prompt")
-    // document.getElementById("Prompt")
+        if (HITS > 3){
+            text = UI + " is not"
+        }
+        else{
+            text = UI + " is";
+        }
+    }
+    return text;
 }
-window.prompt("Script Prompt:\nEnter a whole number to test as a prime number:")
+
+document.getElementById("promptBox").innerHTML = Prompt();
