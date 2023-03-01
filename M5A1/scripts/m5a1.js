@@ -13,10 +13,10 @@ function Prompt(){
             HITS += 1;
             DD -= 1;
             if (HITS > 2) {
-                text = UI + " is not a prime number";
+                text = UI += " is not a prime number";
               }
             else {
-                text = UI + " is a prime number";
+                text = UI += " is a prime number";
               }
             }   
         }
