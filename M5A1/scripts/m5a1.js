@@ -15,7 +15,7 @@ function Prompt(){
         if (TV % DD == 0){
         HITS += 1;
         }
-        if (HITS > 3){
+        if (HITS > 1){
             text = UI + " is not"
         }
         else{

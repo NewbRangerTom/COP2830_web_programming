@@ -7,29 +7,20 @@
 <html>
     <head>
         <title>M5A1 - Javascript</title>
-        <style>
-            div.box {background-color: aqua; width: 900px; height: 200px; border: 1px solid black; font-size: 16px}
-            div#titleBar {position: relative; margin: 0; height: 10px; width: 100%; background-color: inherit; border: 0;}
-            div.result {background-color: lightgrey;
-                        width: 874px;
-                        height: 178px;
-                        margin-top: 9px;
-                        margin-left: 2px;
-                        margin-right: 2px;
-                        border: 1px solid black;
-                        padding-left: 10px;
-                        padding-right: 10px;
-                        font-size: auto;}
-        </style>
+        <link rel="stylesheet" href="./stylesheets/m5a1.css">
     </head>
     <body>
-        <div class="box">
-            <div id="titleBar">Explorer User Prompt</div>
-            <div class="result">
+        <!-- this displays a window that has a styled header, 
+            styled answer, and styled button because I like pretty things. -->
+        <div class="ouput">
+            <div id="titleBar">
                 <h1>COP 2830 - JavaScript Branching Project</h1>
+            </div>
+            <div class="results">
                 <p>This web page runs an external JavaScript that requires a whole number and displays a message indicating if it is a prime number or not.</p>
-                <p><span id="promptBox"></span> a prime number.</p>
-                <p>Click Refresh (or Reload) to run the script again.</p>
+                <p class="center"><span class="lgb" id="promptBox"></span> a prime number.</p>
+                <p>Click Refresh to run the script again.</p>
+                <button class="refresh" onclick="window.location.reload()";>Refresh</button>
             </div>
         </div>
         <script src="./scripts/m5a1.js"></script>

@@ -1,0 +1,64 @@
+/* Assignmnet M5A1
+   Author:      Thomas Werstlein
+   Date:        Mar 2023 */
+
+/* .output, div#titleBAr, div#titleBar h1, and div.results
+ provide the style for the page that displays after clicking 'OK' */
+.output {position: static;
+            width: 900px;
+            height: 200px;
+            border: 1px solid black;
+            font-size: 1em;}
+
+div#titleBar {position: relative;
+            margin-left: 2px;
+            height: 40px;
+            width: 892px;
+            background-color: rgb(0, 195, 255);
+            border: 0}
+
+div#titleBar h1 {background-color: inherit;
+            margin: inherit;
+            width: inherit;
+            height: inherit;
+            border: 0;
+            text-align: center;}
+
+div.results {background-color: lightgrey;
+            width: 874px;
+            height: 178px;
+            margin-top: 0;
+            margin-left: 2px;
+            margin-right: 2px;
+            border: 0 1px 1px 1px solid black;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: auto;}
+
+/*  span.lgb and .center provide the style for the one line of text
+that displays if the number is or is not prime. */
+span.lgb {font-size: larger;
+            font-weight: bolder;
+            text-decoration: underline double;}
+
+.center {text-align: center;}
+
+/* button.refresh and button:hover provide the style for the button
+to rerun the script. */
+button.refresh {
+            background-color: #f86d6d98;
+            height: 60px;
+            width: 70px;
+            border: 3px double black;
+            border-radius: 50%;
+            display: inline-block;
+            font-variant: small-caps;
+            margin-left: 415px;
+            margin-top: -50px;}
+
+button:hover {background-color: rgb(102, 247, 102);
+            border: 2px solid green;
+            height: 75px;
+            width: 85px;
+            font-weight: bold;}
