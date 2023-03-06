@@ -1,6 +1,7 @@
 // Assignment M5A1
 // Author:     Thomas Werstlein
-// Date:       Mar 2023 
+// Date:       Mar 2023
+// https://stackoverflow.com/questions/7056770/changing-the-way-a-javascript-alert-or-prompt-looks
 
 function Prompt(){
     
