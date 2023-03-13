@@ -8,7 +8,7 @@ function Prompt(){
     // if (typeof UI !== "string") 
     var UI = window.prompt("Script Prompt:\nEnter a whole number to test as a prime number:");
     var TV = parseInt(UI);  // TV = test value
-    var text = "";
+    var result = "";
     var HITS = 0;           // number of successful int divisions
     var DD = TV;            // division denominator 
     for (var i = 1; i < DD; DD--){
@@ -16,13 +16,13 @@ function Prompt(){
         HITS += 1;
         }
         if (HITS > 1){
-            text = UI + " is not"
+            result = UI + " is not"
         }
         else{
-            text = UI + " is";
+            result = UI + " is";
         }
     }
-    return text;
+    return result;
 }
 
 document.getElementById("promptBox").innerHTML = Prompt();
