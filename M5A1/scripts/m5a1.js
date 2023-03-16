@@ -5,7 +5,6 @@
 
 function Prompt(){
     
-    // if (typeof UI !== "string") 
     var UI = window.prompt("Script Prompt:\nEnter a whole number to test as a prime number:");
     var TV = parseInt(UI);  // TV = test value
     var result = "";
