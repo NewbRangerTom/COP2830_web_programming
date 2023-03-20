@@ -5,7 +5,7 @@
 // M6A1 Project Constraints F-a
 // Browser Test
 function browserTest(){
-
+	document.getElementById("output")
 }
 
 // M6A1 Project Constraints F-b
@@ -39,5 +39,15 @@ function drawCanvas(){
 	var ctxt = cnvs.getContext("2d");
 	// var img = document.getElementById("scream");
 	var img = "../images/transgender-symbol.png";
-	ctx.drawImage(img, 10, 10);
+	ctxt.drawImage(img, 10, 10);
 }
+
+function mOver() {
+	document.getElementById("heading").innerHTML = "placeholder div."
+	document.getElementById("output").innerHTML = "placeholder div."
+  }
+  
+  function mOut() {
+	document.getElementById("heading").innerHTML = "This is the heading "
+	document.getElementById("output").innerHTML = "This is the output "
+  }

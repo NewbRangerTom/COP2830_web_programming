@@ -4,15 +4,19 @@ Author:		Thomas Werstlein
 Date:		April 2023
 */
 
+body{margin: 0;}
+
 canvas#myCanvas {width: 0; height: 0;}
 
-ul li {display: inline;}
+#output {height: 40px; width: 125px; margin-top: 20px; margin-left: 10px; background-color: darkcyan; color: white;}
 
-#ouput {}
+#heading {height: 40px; width: 125px; margin-top: 20px; margin-left: 10px; background-color: aqua;}
 
-#heading {}
+#nav {list-style-type: none; height: 40px; width: 720px; background-color: rgb(245, 142, 231); margin: 0; padding: 5px; text-align: center; border-radius: 15px;}
+.testOptions li {position: relative; display: inline-block;}
 
-#nav {}
-.navDrop {position: relative; padding: 5px 5px 5px 5px; height: 40px; width: 100%; background-color: gray; display: inline-block;}
-.navDropContent {display: none; position: absolute; min-width: 175px; padding: 10px 10px; z-index: 1;}
-.navDrop:hover .navDropContent {display: block;}
+.btn {margin: 0; padding: 5px; height: 40px; width: 175px; background-color: rgb(248, 85, 226); color: rgb(142, 4, 197); border: none; border-radius: 15px; font-size: 1em; cursor: pointer;}
+.btn:hover {font-weight: bold; color:blue; background-color: rgb(149, 137, 255);}
+
+.subTests {display: none; position: absolute; min-width: 175px; padding: 10px 10px; z-index: 1;}
+.testOptions:hover .subTests {display: block;}

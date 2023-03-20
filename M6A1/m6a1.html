@@ -11,36 +11,35 @@ Date:	April 2023
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>M6A1 Thomas Werstlein</title>
 	<link rel="stylesheet" type="text/css" href="./m6a1.css">
-	<script type="text/javascript" src="./m6a1.js"></script>
+	
 </head>
 <body>
-	<div class="navDrop" id="nav">
-		<ul>
-			<li><a>Browser Test</a></li>
-			<li><a>HTML Features Test</a></li>
-			<li><a>Mobile Tests</a>
-				<ul class="navDropContent">
-					<li><a>Screen Resolution</a></li>
-					<li><a>Screen Orientation</a></li>
-				</ul>
-			</li>
-			<li><a>Canvas Tests</a>
-				<ul class="navDropContent">
-					<li><a>General Support</a></li>
-					<li><a>Text Support</a></li>
-					<li><a>Draw Canvas</a></li>
-				</ul>
-			</li>
-		</ul>
+	<ul class="testOptions" id="nav">
+		<li><button class="btn" type="button" onclick="">Browser Test</button></li>
+		<li><button class="btn" type="button" onclick="">HTML Features Test</button></li>
+		<li><button class="btn" type="button" onclick="">Mobile Tests</button>
+			<ul class="subTests">
+				<li><button class="btn" type="button" onclick="">Screen Resolution</button></li>
+				<li><button class="btn" type="button" onclick="">Screen Orientation</button></li>
+			</ul>
+		</li>
+		<li><button class="btn" type="button" onclick="">Canvas Tests</button>
+			<ul class="subTests">
+				<li><button class="btn" type="button" onclick="">General Support</button></li>
+				<li><button class="btn" type="button" onclick="">Text Support</button></li>
+				<li><button class="btn" type="button" onclick="">Draw Canvas</button></li>
+			</ul>
+		</li>
+	</ul>
+	<div onmouseover="mOver()" onmouseout="mOut()" id="heading">
+	heading placeholder.
 	</div>
-	<div id="heading">
-		
-	</div>
-	<div id="output">
-		
+	<div onmouseover="mOver()" onmouseout="mOut()" id="output">
+	output placeholder.
 	</div>
 	<canvas id="myCanvas">
 		
 	</canvas>
+	<script src="m6a1.js"></script>
 </body>
 </html>
