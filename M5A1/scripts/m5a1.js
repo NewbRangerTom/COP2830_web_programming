@@ -1,7 +1,9 @@
 // Assignment M5A1
 // Author:     Thomas Werstlein
 // Date:       Mar 2023
-// https://stackoverflow.com/questions/7056770/changing-the-way-a-javascript-alert-or-prompt-looks
+
+// this function determins if a user provided number is a prime number or not by
+// using the window.prompt method.
 
 function Prompt(){
     
