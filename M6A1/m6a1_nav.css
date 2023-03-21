@@ -1,0 +1,117 @@
+/*
+File name:	m6a1_nav.css
+Author:		Thomas Werstlein
+Date:		April 2023
+*/
+
+/* main navbar */
+#nav {
+    background-color: rgb(245, 142, 231);
+    margin: 0;
+    padding: 5px;
+    line-height: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+    display: inline-block;
+}
+
+/* list items */
+#nav li {
+    position: relative;
+    margin: 0;
+    padding: 0 0 8px;
+    float: left;
+    list-style: none;     
+}
+
+/* top level buttons */
+#nav button {
+    font-size: 1em;
+    margin: 0;
+    padding: 5px;
+    height: 40px;
+    width: 175px;
+    background-color: rgb(245, 142, 231);
+    color: rgb(142, 4, 197);
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    cursor: pointer;
+}
+
+/* top level button on hover */
+#nav .current button, #nav li:hover > button {
+    background-color: rgb(149, 137, 255);
+    color:blue;
+    box-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+
+/* dropdowns on hover */
+#nav ul li:hover button, #nav li:hover li button {
+    background: none;
+    border: none;
+    color: rgb(142, 4, 197);
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+/* dropdown button on hover */
+#nav ul li button:hover {
+    background-color: rgb(245, 142, 231);
+    color: blue;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+/* shows or drops down submenu */
+#nav li:hover > ul {
+    display: block;
+}
+
+/* second level buttons */
+#nav ul {
+    background-color: rgb(245, 212, 240);
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 730;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    border: 1px solid rgb(142, 4, 197);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+/*  */
+#nav ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* dropdown menu text*/
+#nav ul button {
+    font-weight: normal;
+}
+
+/* second level fly out */
+#nav ul {
+    left: 35px;
+    top: 30px;
+    z-index: 1;
+}
