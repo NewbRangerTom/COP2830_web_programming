@@ -4,7 +4,7 @@
 -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
         <title>M5A1 - Javascript</title>
         <link rel="stylesheet" href="m5a1.css">
@@ -12,15 +12,17 @@
     <body>
         <!-- this displays a window that has a styled header, 
             styled answer, and styled button because I like pretty things. -->
-        <div class="ouput" id="outDiv">
-            <div id="titleBar">
-                <h1>COP 2830 - JavaScript Branching Project</h1>
-            </div>
-            <div class="results" id="resDiv">
-                <p>This web page runs an external JavaScript that requires a whole number and displays a message indicating if it is a prime number or not.</p>
-                <p class="center"><span class="lgb" id="promptBox"></span> a prime number.</p>
-                <p>Click Refresh to run the script again.</p>
-                <button class="refresh" onclick="window.location.reload()";>Refresh</button>
+        <div id="main">
+            <div class="ouput" id="outDiv">
+                <div id="titleBar">
+                    <h1>COP 2830 - JavaScript Branching Project</h1>
+                </div>
+                <div class="results">
+                    <p>This web page runs an external JavaScript that requires a whole number and displays a message indicating if it is a prime number or not.</p>
+                    <p class="center"><span class="lgb" id="promptBox"></span> a prime number.</p>
+                    <p>Click Refresh to run the script again.</p>
+                    <button class="refresh" onclick="window.location.reload()">Refresh</button>
+                </div>
             </div>
         </div>
         <script src="m5a1.js"></script>

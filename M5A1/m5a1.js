@@ -26,7 +26,7 @@ function Prompt(){
         }
     }
     return result;
-    document.getElementById("outDiv").style.display = "block";
 }
 
 document.getElementById("promptBox").innerHTML = Prompt();
+document.getElementById("main").style.display = "block";

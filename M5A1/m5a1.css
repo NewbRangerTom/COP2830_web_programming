@@ -4,67 +4,65 @@
 
 /* .output, div#titleBAr, div#titleBar h1, and div.results
  provide the style for the page that displays after clicking 'OK' */
-.output {position: static;
-            width: 900px;
-            height: 200px;
-            border: 1px solid black;
-            font-size: 1em;
-            display: none;
-            -webkit-display: none;
-            -moz-display: none;}
+#main {display: none;
+   border: 1px solid black;
+   width: 910px;}
+
+ .output {position: static;
+   width: 900px;
+   height: 200px;
+   border: 1px solid black;
+   font-size: 1em;}
 
 div#titleBar {position: relative;
-            margin-left: 2px;
-            height: 40px;
-            width: 892px;
-            /* background-color: rgb(0, 195, 255); */
-            border: 0;
-            clear: both;}
+   margin-left: 2px;
+   height: 40px;
+   width: 892px;
+   /* background-color: rgb(0, 195, 255); */
+   border: 0;
+   clear: both;}
 
 div#titleBar h1 {background-color: inherit;
-            margin: inherit;
-            width: inherit;
-            height: inherit;
-            border: 0;
-            text-align: center;}
+   margin: inherit;
+   width: inherit;
+   height: inherit;
+   border: 0;
+   text-align: center;}
 
 div.results {position:relative;
-            /* background-color: lightgrey; */
-            width: 874px;
-            min-height: 180px;
-            margin-top: 0;
-            margin-left: 2px;
-            margin-right: 2px;
-            border: 0 1px 1px 1px solid black;
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
-            font-size: auto;}
+   /* background-color: lightgrey; */
+   width: 880px;
+   min-height: 190px;
+   margin-top: 0;
+   margin-left: 2px;
+   margin-right: 2px;
+   padding-top: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+   font-size: 1em;}
 
 /*  span.lgb and .center provide the style for the one line of text
 that displays if the number is or is not prime. */
 span.lgb {font-size: larger;
-            font-weight: bolder;
-            text-decoration: underline double;}
+   font-weight: bolder;
+   text-decoration: underline double;}
 
 .center {text-align: center;}
 
 /* button.refresh and button:hover provide the style for the button
 to rerun the script. */
 button.refresh {
-            background-color: lightgray;
-            height: 60px;
-            width: 70px;
-            border: 3px double black;
-            border-radius: 50%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            font-variant: small-caps;
-            margin-left: 415px;
-            margin-top: -50px;}
+   background-color: lightgray;
+   height: 60px;
+   width: 70px;
+   border: 3px double black;
+   border-radius: 50%;
+   font-variant: small-caps;
+   margin-left: 415px;
+   margin-top: -50px;}
 
 button:hover {background-color: gray;
-            border: 2px solid black;
-            height: 65px;
-            width: 75px;
-            font-weight: bold;}
+   border: 2px solid black;
+   height: 65px;
+   width: 75px;
+   font-weight: bold;}
