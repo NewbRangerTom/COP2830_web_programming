@@ -19,7 +19,7 @@ function Prompt(){
         HITS += 1;
         }
         if (HITS > 1){
-            result = UI + " is not"
+            result = UI + " is not";
         }
         else{
             result = UI + " is";
