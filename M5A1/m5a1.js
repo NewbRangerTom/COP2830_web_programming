@@ -1,7 +1,7 @@
 /*
- Assignment M5A1
- Author:     Thomas Werstlein
- Date:       Mar 2023
+    Assignment: M5A1
+    Author:     Thomas Werstlein
+    Date:       22 Mar 2023
 */
 
 // this function determins if a user provided number is a prime number or not by

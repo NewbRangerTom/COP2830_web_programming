@@ -1,6 +1,9 @@
-// File name:	m6a1.js
-// Author:		Thomas Werstlein
-// Date:		April 2023
+/*
+    Assignment: M6A1
+    File name:	m6a1.js
+    Author:		Thomas Werstlein
+    Date:		April 2023
+*/
 
 // M6A1 Project Constraints F-a
 // Browser Test
