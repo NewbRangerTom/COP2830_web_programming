@@ -8,6 +8,7 @@
 /* main navbar */
 #nav {
     background-color: rgb(245, 142, 231);
+    height: 40px;
     margin: 0;
     padding: 5px;
     line-height: 100%;

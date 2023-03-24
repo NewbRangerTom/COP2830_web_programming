@@ -5,10 +5,61 @@
     Date:		April 2023
 */
 
+/*
+this is the main css file covering styles for
+everything other than the navbar.
+*/
+
 body{margin: 0;}
 
-canvas#myCanvas {width: 0; height: 0;}
+#myCanvas {width: 0; height: 0;}
 
-#output {height: 40px; width: 125px; margin-top: 20px; margin-left: 10px; background-color: darkcyan; color: white;}
+#heading {
+    height: 30px;
+    width: 900px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
 
-#heading {height: 40px; width: 125px; margin-top: 20px; margin-left: 10px; background-color: aqua;}
+#heading h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+
+#heading h1 span#h3 {
+    font-size: .9em;
+}
+
+#output {
+    height: 50%;
+    width: 950px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#output li {
+    line-height: 1.5em;
+}
+
+#output p {
+    font-size: 1.5em;
+    margin: 25px;
+}
+
+#output p span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#output p span#uc {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#output p span#green {
+    color: green;
+}
+
+#output p span#red {
+    color: red;
+}

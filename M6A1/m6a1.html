@@ -16,33 +16,37 @@
 	
 </head>
 <body>
+<!-- Project Constraint B.a. -->
 	<!-- using m6a1_nav.css -->
 	<ul id="nav">
-		<li><button type="button" onclick="">Browser Test</button></li>
-		<li><button type="button" onclick="">HTML Features Test</button></li>
-		<li><button type="button" onclick="">Mobile Tests</button>
+		<li><button type="button" onclick="browserTest()">Browser Test</button></li>				<!-- Project Constraint D.a. -->
+		<li><button type="button" onclick="featureTest()">HTML Features Test</button></li>			<!-- Project Constraint D.b. -->
+		<li><button type="button" onclick="">Mobile Tests</button>									<!-- Project Constraint D.c. -->
 			<ul>
-				<li><button type="button" onclick="">Screen Resolution</button></li>
-				<li><button type="button" onclick="">Screen Orientation</button></li>
+				<li><button type="button" onclick="resolution()">Screen Resolution</button></li>	<!-- Project Constraint D.c.i. -->
+				<li><button type="button" onclick="orientation()">Screen Orientation</button></li>	<!-- Project Constraint D.c.ii. -->
 			</ul>
 		</li>
-		<li><button type="button" onclick="">Canvas Tests</button>
+		<li><button type="button" onclick="">Canvas Tests</button>									<!-- Project Constraint D.d. -->
 			<ul>
-				<li><button type="button" onclick="">General Support</button></li>
-				<li><button type="button" onclick="">Text Support</button></li>
-				<li><button type="button" onclick="">Draw Canvas</button></li>
+				<li><button type="button" onclick="genSup()">General Support</button></li>			<!-- Project Constraint D.d.i. -->
+				<li><button type="button" onclick="textSup()">Text Support</button></li>			<!-- Project Constraint D.d.ii. -->
+				<li><button type="button" onclick="drawCanvas()">Draw Canvas</button></li>			<!-- Project Constraint D.d.iii. -->
 			</ul>
 		</li>
 	</ul>
-	<div onmouseover="mOver()" onmouseout="mOut()" id="heading">
-	heading placeholder.
+<!-- Project Constraint B.b. -->
+	<div id="heading">
+		<h1>Click a menu item above to test various web features.</h1>
 	</div>
-	<div onmouseover="mOver()" onmouseout="mOut()" id="output">
-	output placeholder.
+<!-- Project Constraint B.c. -->
+	<div id="output">
 	</div>
+<!-- Project Constraint B.d. -->
 	<canvas id="myCanvas">
 		
 	</canvas>
+	<div style="display: none;"><img id="image" src="../images/transgender-symbol.png" width="120" height="120"></div>
 	<script src="m6a1.js"></script>
 </body>
 </html>
