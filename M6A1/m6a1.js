@@ -18,6 +18,8 @@ function browserTest(){
 	outputText += '<li>' + "Platform: " + navigator.platform + '</li>';
 	outputText += '<li>' + "User-agent Header: " + navigator.userAgent + '</li>' + '</ul>';
 	document.getElementById("output").innerHTML = outputText;
+	document.getElementById('myCanvas').style.width = 0;
+	document.getElementById('myCanvas').style.height = 0;
 }
 
 // M6A1 Project Constraints F-b
@@ -37,6 +39,8 @@ function featureTest(){
 	}
 	list += '</ul>';
 	document.getElementById("output").innerHTML = list;
+	document.getElementById('myCanvas').style.width = 0;
+	document.getElementById('myCanvas').style.height = 0;
 }
 
 // M6A1 Project Constraints F-c
@@ -47,6 +51,8 @@ function resolution(){
 	const W = window.screen.availWidth;
 	const H = window.screen.availHeight;
 	document.getElementById("output").innerHTML = '<ul>' + '<li>' + "Width: &nbsp" + W + '</li>' + '<li>' + "Height: " + H + '</li>' + '</ul>';
+	document.getElementById('myCanvas').style.width = 0;
+	document.getElementById('myCanvas').style.height = 0;
 }
 
 function orientation(){
@@ -54,6 +60,8 @@ function orientation(){
 	document.getElementById("heading").innerHTML = pageTitle;
 	let O = screen.orientation.type;
 	document.getElementById("output").innerHTML = '<ul>' + '<li>' + "Orientation: " + O + '</li>' + '</ul>';
+	document.getElementById('myCanvas').style.width = 0;
+	document.getElementById('myCanvas').style.height = 0;
 }
 
 // M6A1 Project Constraints F-d
@@ -62,6 +70,8 @@ function genSup(){
 	document.getElementById("heading").innerHTML = '<h1>' + "Canvas General Support" + '</h1>';
 	results = !!document.createElement('canvas').getContext;
 	document.getElementById("output").innerHTML = '<p>' + "Canvas Support: " + '<span id="uc">' + results + '</span>' + '</p>';
+	document.getElementById('myCanvas').style.width = 0;
+	document.getElementById('myCanvas').style.height = 0;
 }
 
 function textSup(){
@@ -75,15 +85,19 @@ function textSup(){
 		outputText = "You have chosen your browser poorly for it does <span id='red';>NOT</span> support canvas text.";
 	}
 	document.getElementById("output").innerHTML = '<p>' + outputText + '</p>';
+	document.getElementById('myCanvas').style.width = 0;
+	document.getElementById('myCanvas').style.height = 0;
 }
 
 function drawCanvas(){
+	document.getElementById("myCanvas").innerHTML = String("");
 	document.querySelector("#heading").innerHTML = '<h1>' + "Draw Canvas" + '</h1>';
+	document.getElementById('output').innerHTML = "";
 	const can = document.querySelector("#myCanvas");
-	can.style.width = "840px";
-	can.style.height = "600px";
+	can.style.width = "1000px";
+	can.style.height = "500px";
 	const con = can.getContext("2d");
 	const img = document.getElementById("image");
 	// console.log(img.src);
-	con.drawImage(img, 1, 1);		
+	con.drawImage(img, 115, 1);
 }
