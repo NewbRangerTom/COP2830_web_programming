@@ -80,8 +80,10 @@ function textSup(){
 function drawCanvas(){
 	document.querySelector("#heading").innerHTML = '<h1>' + "Draw Canvas" + '</h1>';
 	const can = document.querySelector("#myCanvas");
+	can.style.width = "840px";
+	can.style.height = "600px";
 	const con = can.getContext("2d");
 	const img = document.getElementById("image");
 	// console.log(img.src);
-	con.drawImage(img, 10, 10);		
+	con.drawImage(img, 1, 1);		
 }
