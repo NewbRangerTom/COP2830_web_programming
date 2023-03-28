@@ -94,13 +94,15 @@ function drawCanvas(){
 	document.getElementById('output').innerHTML = "";
 	const W = window.screen.availWidth;
 	const H = window.screen.availHeight;
-	let img_X = 1060 * .28; 
-	let img_Y = 455 * .28;
 	const can = document.querySelector("#myCanvas");
 	can.style.width = String(`${W}px`);
 	can.style.height = String(`${H}px`);
 	const con = can.getContext("2d");
 	const img = new Image();
-	img.addEventListener("load", () => {con.drawImage(img, 2, 15, img_X, img_Y);}, false);
+	img.addEventListener("load", 
+		() => {
+			let img_X = img.width * .28; 
+			let img_Y = img.height * .28;
+			con.drawImage(img, 2, 15, img_X, img_Y);}, false);
 	img.src = "mad-max-fury-road-kritik.jpg";
 }
