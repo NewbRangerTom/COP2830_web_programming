@@ -7,97 +7,100 @@
 
 // M6A1 Project Constraints F-a
 // Browser Test
-function browserTest(){
-	document.getElementById("heading").innerHTML = '<h1>' + "Browser Information" + '</h1>';
-	outputText = '<ul>' + '<li>' + "Browser Codename: " + navigator.appCodeName + '</li>';
-	outputText += '<li>' + "Browser Name: " + navigator.appName + '</li>';
-	outputText += '<li>' + "Browser Version: " + navigator.appVersion + '</li>';
-	outputText += '<li>' + "Browser Cookies: " + navigator.cookieEnabled + '</li>';
-	outputText += '<li>' + "Browser Language: " + navigator.language + '</li>';
-	outputText += '<li>' + "Browser Online: " + navigator.onLine + '</li>';
-	outputText += '<li>' + "Platform: " + navigator.platform + '</li>';
-	outputText += '<li>' + "User-agent Header: " + navigator.userAgent + '</li>' + '</ul>';
-	document.getElementById("output").innerHTML = outputText;
+function setCanvasToZero(){
 	document.getElementById('myCanvas').style.width = 0;
 	document.getElementById('myCanvas').style.height = 0;
+}
+
+function browserTest(){
+	document.getElementById("heading").innerHTML = String(`<h1>Browser Information</h1>`);
+	outputText = String(`<ul><li>Browser Codename: ${navigator.appCodeName}</li>`);
+	outputText += String(`<li>Browser Name: ${navigator.appName}</li>`);
+	outputText += String(`<li>Browser Version: ${navigator.appVersion}</li>`);
+	outputText += String(`<li>Browser Cookies: ${navigator.cookieEnabled}</li>`);
+	outputText += String(`<li>Browser Language: ${navigator.language}</li>`);
+	outputText += String(`<li>Browser Online: ${navigator.onLine}</li>`);
+	outputText += String(`<li>Platform: ${navigator.platform}</li>`);
+	outputText += String(`<li>User-agent Header: ${navigator.userAgent}</li></ul>`);
+	document.getElementById("output").innerHTML = outputText;
+	setCanvasToZero();
 }
 
 // M6A1 Project Constraints F-b
 // HTML Feature Test
 function featureTest(){
-	document.getElementById("heading").innerHTML = '<h1>' + "Compatible HTML5 Features" + '</h1>';
+	document.getElementById("heading").innerHTML = String(`<h1>Compatible HTML5 Features</h1>`);
 	var list = '<ul>';
 	var inputs = ["Search", "Number", "Range", "Color", "Tele", "Url", "Email", "Date", "Month", "Week", "Time", "Datetime", "Datetime-local"];
 	var inp = document.createElement("input");
 	for (var i = 0; i < inputs.length; i++){
 		inp.setAttribute("type", inputs[i]);
 		if (inp.type == "text"){
-			list += '<li>' + inputs[i] + ": NO" + '</li>';
+			list += String(`<li>${inputs[i]}: NO</li>`);
 		} else {
-			list += '<li>' + inputs[i] + ": YES" + '</li>';
+			list += String(`<li>${inputs[i]}: YES</li>`);
 		}
 	}
 	list += '</ul>';
 	document.getElementById("output").innerHTML = list;
-	document.getElementById('myCanvas').style.width = 0;
-	document.getElementById('myCanvas').style.height = 0;
+	setCanvasToZero();
 }
 
 // M6A1 Project Constraints F-c
 // Mobile Tests
 function resolution(){
-	let testInfo = '<h1>' + "Mobile Screen Information" + '<span id="h3">' + " - Screen Resolution" + '</span>' + '</h1>'
+	let testInfo = String(`<h1>Mobile Screen Information<span id="h3"> - Screen Resolution</span></h1>`);
 	document.getElementById("heading").innerHTML = testInfo;
 	const W = window.screen.availWidth;
 	const H = window.screen.availHeight;
-	document.getElementById("output").innerHTML = '<ul>' + '<li>' + "Width: &nbsp" + W + '</li>' + '<li>' + "Height: " + H + '</li>' + '</ul>';
-	document.getElementById('myCanvas').style.width = 0;
-	document.getElementById('myCanvas').style.height = 0;
+	let testOutput = String(`<ul><li>Width: &nbsp${W}</li><li>Height: ${H}</li></ul>`);
+	document.getElementById("output").innerHTML = testOutput;
+	setCanvasToZero();
 }
 
 function orientation(){
-	let pageTitle = '<h1>' + "Mobile Screen Information" + '<span id="h3">' + " - Orientation" + '</span>' + '</h1>';
+	let pageTitle = String(`<h1>Mobile Screen Information<span id="h3"> - Orientation</span></h1>`);
 	document.getElementById("heading").innerHTML = pageTitle;
 	let O = screen.orientation.type;
-	document.getElementById("output").innerHTML = '<ul>' + '<li>' + "Orientation: " + O + '</li>' + '</ul>';
-	document.getElementById('myCanvas').style.width = 0;
-	document.getElementById('myCanvas').style.height = 0;
+	document.getElementById("output").innerHTML = String(`<ul><li>Orientation: ${O}</li></ul>`);
+	setCanvasToZero();
 }
 
 // M6A1 Project Constraints F-d
 // Canvas Tests
 function genSup(){
-	document.getElementById("heading").innerHTML = '<h1>' + "Canvas General Support" + '</h1>';
+	document.getElementById("heading").innerHTML = String(`<h1>Canvas General Support</h1>`);
 	results = !!document.createElement('canvas').getContext;
-	document.getElementById("output").innerHTML = '<p>' + "Canvas Support: " + '<span id="uc">' + results + '</span>' + '</p>';
-	document.getElementById('myCanvas').style.width = 0;
-	document.getElementById('myCanvas').style.height = 0;
+	document.getElementById("output").innerHTML = String(`<p>Canvas Support: <span id="uc">${results}</span></p>`);
+	setCanvasToZero();
 }
 
 function textSup(){
-	document.getElementById("heading").innerHTML = '<h1>' + "Canvas Text Support" + '</h1>';
+	document.getElementById("heading").innerHTML = String(`<h1>Canvas Text Support</h1>`);
 	var cnvs = document.getElementById("myCanvas");
 	var ctxt = cnvs.getContext("2d");
 	supportsText = typeof ctxt.fillText;
 	if (supportsText == 'function'){
-		outputText = "You have chosen your browser wisely for it <span id='green';>DOES</span> supports canvas text.";
+		outputText = "You have chosen your browser wisely, for it <span id='green';>DOES</span> supports canvas text.";
 	} else {
-		outputText = "You have chosen your browser poorly for it does <span id='red';>NOT</span> support canvas text.";
+		outputText = "You have chosen your browser poorly, for it does <span id='red';>NOT</span> support canvas text.";
 	}
-	document.getElementById("output").innerHTML = '<p>' + outputText + '</p>';
-	document.getElementById('myCanvas').style.width = 0;
-	document.getElementById('myCanvas').style.height = 0;
+	document.getElementById("output").innerHTML = String(`<p>${outputText}</p>`);
+	setCanvasToZero();
 }
 
 function drawCanvas(){
-	document.getElementById("myCanvas").innerHTML = String("");
-	document.querySelector("#heading").innerHTML = '<h1>' + "Draw Canvas" + '</h1>';
+	document.querySelector("#heading").innerHTML = String(`<h1>Draw Canvas</h1>`);
 	document.getElementById('output').innerHTML = "";
+	const W = window.screen.availWidth;
+	const H = window.screen.availHeight;
+	let img_X = 1060 * .28; 
+	let img_Y = 455 * .28;
 	const can = document.querySelector("#myCanvas");
-	can.style.width = "1000px";
-	can.style.height = "500px";
+	can.style.width = String(`${W}px`);
+	can.style.height = String(`${H}px`);
 	const con = can.getContext("2d");
-	const img = document.getElementById("image");
-	// console.log(img.src);
-	con.drawImage(img, 115, 1);
+	const img = new Image();
+	img.addEventListener("load", () => {con.drawImage(img, 2, 15, img_X, img_Y);}, false);
+	img.src = "mad-max-fury-road-kritik.jpg";
 }

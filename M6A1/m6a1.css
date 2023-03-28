@@ -10,15 +10,24 @@ this is the main css file covering styles for
 everything other than the navbar.
 */
 
-body{margin: 0;}
-
-#myCanvas {width: 0; height: 0;}
+body {
+    margin: 0;
+    background-image: url('IMG_1816.jpg'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 307px 410px;
+    background-position-x: 80%;
+    background-position-y: 80%;
+}
 
 #heading {
+    position: relative;
+    top: 50px;
+    left: 0;
     height: 30px;
-    width: 900px;
-    margin-top: 20px;
-    margin-left: 10px;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 40px;
 }
 
 #heading h1 {
@@ -26,15 +35,23 @@ body{margin: 0;}
     font-weight: 500;
 }
 
+#heading h1#home {
+    text-align: center;
+}
+
 #heading h1 span#h3 {
     font-size: .9em;
 }
 
 #output {
+    position: relative;
+    top: 70px;
+    left: 10px;
     height: 50%;
-    width: 950px;
-    margin-top: 20px;
-    margin-left: 10px;
+    width: 900px;
+    margin-top: 5px;
+    margin-left: 40px;
+    z-index: 1;
 }
 
 #output li {
@@ -62,4 +79,13 @@ body{margin: 0;}
 
 #output p span#red {
     color: red;
+}
+
+#myCanvas {
+    position: relative;
+    top: 75px;
+    left: 0;
+    margin-top: -95px;
+    width: 0; 
+    height: 0;
 }

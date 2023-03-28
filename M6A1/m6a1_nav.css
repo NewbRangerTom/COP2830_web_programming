@@ -7,6 +7,9 @@
 
 /* main navbar */
 #nav {
+    position: absolute;
+    top: 0;
+    left: 30%;
     background-color: rgb(245, 142, 231);
     height: 40px;
     margin: 0;
@@ -38,7 +41,7 @@
     height: 40px;
     width: 175px;
     background-color: rgb(245, 142, 231);
-    color: rgb(142, 4, 197);
+    color: rgb(117, 33, 150);
     font-weight: bold;
     border: none;
     border-radius: 10px;
