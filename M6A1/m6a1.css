@@ -12,27 +12,29 @@ everything other than the navbar.
 
 body {
     margin: 0;
-    background-image: url('IMG_1816.jpg'); 
-    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 307px 410px;
-    background-position-x: 80%;
-    background-position-y: 80%;
+    background-image: linear-gradient(to bottom right, rgb(149, 137, 255), white, rgb(245, 142, 231));
+    background-image: -moz-linear-gradient(to bottom right, rgb(149, 137, 255), white, rgb(245, 142, 231));
+    background-image: -o-linear-gradient(to bottom right, rgb(149, 137, 255), white, rgb(245, 142, 231));
+    background-image: -webkit-linear-gradient(to bottom right, rgb(149, 137, 255), white, rgb(245, 142, 231));
+    height: 100%;
+    background-repeat: no-repeat;
 }
 
 #heading {
     position: relative;
-    top: 50px;
+    top: 20px;
     left: 0;
     height: 30px;
     width: 100%;
     margin-top: 5px;
-    margin-left: 40px;
+    margin-left: 0;
 }
 
 #heading h1 {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 500;
+    margin-left: 20px;
 }
 
 #heading h1#home {
@@ -45,7 +47,7 @@ body {
 
 #output {
     position: relative;
-    top: 70px;
+    top: 25px;
     left: 10px;
     height: 50%;
     width: 900px;
@@ -83,7 +85,7 @@ body {
 
 #myCanvas {
     position: relative;
-    top: 75px;
+    top: 55px;
     left: 0;
     margin-top: -95px;
     width: 0; 
