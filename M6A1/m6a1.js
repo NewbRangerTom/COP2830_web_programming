@@ -59,10 +59,10 @@ function resolution(){
 }
 
 function orientation(){
-	let pageTitle = String(`<h1>Mobile Screen Information<span id="h3"> - Orientation</span></h1>`);
+	let pageTitle = `<h1>Mobile Screen Information<span id="h3"> - Orientation</span></h1>`;
 	document.getElementById("heading").innerHTML = pageTitle;
 	let O = screen.orientation.type;
-	document.getElementById("output").innerHTML = String(`<ul><li>Orientation: ${O}</li></ul>`);
+	document.getElementById("output").innerHTML = `<ul><li>Orientation: ${O}</li></ul>`;
 	setCanvasToZero();
 }
 
