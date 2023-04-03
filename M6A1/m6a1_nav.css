@@ -4,13 +4,13 @@
     Author:		Thomas Werstlein
     Date:		April 2023
 */
-
+ol {background-color: linear-gradient( rgb(0, 0, 0), rgb(228, 194, 43), rgb(226, 3, 3));}
 /* main navbar */
 #nav {
     position: relative;
     top: 0;
     left: 25px;
-    background-color: rgb(245, 142, 231);
+    background-color: rgb(2226, 3, 3);
     height: 40px;
     margin: 0;
     padding: 5px;
@@ -40,8 +40,8 @@
     padding: 5px;
     height: 40px;
     width: 175px;
-    background-color: rgb(245, 142, 231);
-    color: rgb(117, 33, 150);
+    background-color: rgb(226, 3, 3);
+    color: rgb(228, 194, 43);
     font-weight: bold;
     border: none;
     border-radius: 10px;
@@ -52,7 +52,7 @@
 
 /* top level button on hover */
 #nav .current button, #nav li:hover > button {
-    background-color: rgb(149, 137, 255);
+    background-color: rgb(159, 159, 161);
     color:blue;
     box-shadow: 0 1px 1px rgba(0,0,0,.3);
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.3);
@@ -63,7 +63,7 @@
 #nav ul li:hover button, #nav li:hover li button {
     background: none;
     border: none;
-    color: rgb(142, 4, 197);
+    color: rgb(0,0,0);
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -71,7 +71,7 @@
 
 /* dropdown button on hover */
 #nav ul li button:hover {
-    background-color: rgb(245, 142, 231);
+    background-color: rgb(226, 3, 3);
     color: blue;
     border-radius: 0;
     -webkit-border-radius: 0;
@@ -85,7 +85,7 @@
 
 /* second level buttons */
 #nav ul {
-    background-color: rgb(245, 212, 240);
+    background-color: rgb(226, 3, 3);
     display: none;
     margin: 0;
     padding: 0;
@@ -93,7 +93,7 @@
     position: absolute;
     top: 25px;
     left: 0;
-    border: 1px solid rgb(142, 4, 197);
+    border: 1px solid rgb(228, 194, 43);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;

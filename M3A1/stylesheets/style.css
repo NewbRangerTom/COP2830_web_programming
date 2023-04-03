@@ -5,7 +5,7 @@ button {font-weight: bolder;}
 em {font-size: x-small;}
 fieldset {margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 450px; height: 285px; padding-left: 50px;}
 form {float: left; padding: 30px;}
-header {background-color: rgb(245, 142, 231); border:5px solid rgb(131, 196, 240); color: floralwhite; text-align: center;}
+header {background-color: rgb(252, 52, 52); border:5px solid rgb(37, 159, 240); color: rgb(250, 205, 115); text-align: center;}
 /* header {border:5px solid; text-align: center; margin-left: 150px; margin-right: 150px;} */
 header.radius {border-top-right-radius: 25% 25%; border-top-left-radius: 25% 25%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;}
 header#height_1 {height: 175px;}
@@ -22,7 +22,7 @@ ul {border: 2px; padding: 0;}
 
 /* classes */
 .button_border { border: 0; padding-top: 5px;}
-.button_border:hover {border-width: 3px; border-style: solid; border-color: rgb(245, 142, 231);}
+.button_border:hover {border-width: 3px; border-style: solid; border-color: rgb(252, 52, 52);}
 .clock {text-align: center;}
 .div1 {padding-top: 10px;}
 .div_about {background-color: lightgrey; font-size: larger; width: 350px}
@@ -35,9 +35,9 @@ ul {border: 2px; padding: 0;}
 .larger {font-size: larger;}
 .left {float: left;}
 .nav_h {padding: 5px 0px 0px 20px; left: 100%; height: 40px; width: auto; background-color: gray;}
-.nav_v_am {float: left; width: 20%; padding: 20px; padding-left: 30px; background: rgb(149, 137, 255);}
+.nav_v_am {float: left; width: 20%; padding: 20px; padding-left: 30px; background: rgb(37, 159, 240);}
 .nav_v_am ul {list-style-type: none; border: 2px; padding: 0;}
-.nav_v {float: left; width: 250px; padding: 20px; padding-left: 40px; background: rgb(149, 137, 255);}
+.nav_v {float: left; width: 250px; padding: 20px; padding-left: 40px; background: rgb(37, 159, 240);}
 .nav_v ul {list-style-type: none; border: 2px; padding: 0;}
 .responsive {padding: 0 6px; float: left; width: 24.99999%;}
 .right {float: right; padding-right: 20px;}
@@ -51,12 +51,12 @@ ul {border: 2px; padding: 0;}
 #hide {opacity: 0;}
 #hide:hover {opacity: 1;}
 #hr1 {background-color: darkblue; height: 10px; border: 1px solid;}
-#nav_border {border-right-width: 10px; border-right-color: rgb(247, 42, 230); border-right-style: double; border-end-end-radius:  50% 50%; border-start-start-radius: 25% 25%;}
+#nav_border {border-right-width: 10px; border-right-color: rgb(252, 52, 52); border-right-style: double; border-end-end-radius:  50% 50%; border-start-start-radius: 25% 25%;}
 #secret {margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 
 [data-columns] {display: grid; grid-gap: 2px; padding: 2px; margin: 0 0 2px 0;}
 [data-columns] > div {height: 100px; background: white;}
-[data-columns="3"] {background: #9CCC65; grid-template-columns: repeat(3, 1fr);}
+[data-columns="3"] {background: rgb(250, 205, 115); grid-template-columns: repeat(3, 1fr);}
 
 @media only screen and (max-width: 700px) {.responsive {width: 49.99999%; margin: 6px 0;}}
 @media only screen and (max-width: 500px) {.responsive {width: 100%;}}

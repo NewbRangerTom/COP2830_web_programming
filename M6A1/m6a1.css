@@ -13,10 +13,10 @@ everything other than the navbar.
 body {
     margin: 0;
     background-attachment: fixed;
-    background-image: linear-gradient(to bottom right, rgb(149, 137, 255), white, rgb(245, 142, 231));
-    background-image: -moz-linear-gradient(to bottom right, rgb(149, 137, 255), white, rgb(245, 142, 231));
-    background-image: -o-linear-gradient(to bottom right, rgb(149, 137, 255), white, rgb(245, 142, 231));
-    background-image: -webkit-linear-gradient(to bottom right, rgb(149, 137, 255), white, rgb(245, 142, 231));
+    background-image: linear-gradient(to bottom right, rgb(85, 85, 85), rgb(228, 194, 43), rgb(226, 3, 3));
+    background-image: -moz-linear-gradient(to bottom right, rgb(0, 0, 0), rgb(228, 194, 43), rgb(226, 3, 3));
+    background-image: -o-linear-gradient(to bottom right, rgb(0, 0, 0), rgb(228, 194, 43), rgb(226, 3, 3));
+    background-image: -webkit-linear-gradient(to bottom right, rgb(0, 0, 0), rgb(228, 194, 43), rgb(226, 3, 3));
     height: 100%;
     background-repeat: no-repeat;
 }
@@ -58,6 +58,9 @@ body {
 
 #output li {
     line-height: 1.5em;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
 #output p {
