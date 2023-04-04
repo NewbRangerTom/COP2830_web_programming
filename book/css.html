@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>How to build a website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="navigation">
+            <div id="navigation-inside">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html.html">HTML</a></li>
+                    <li class="active"><a href="css.html">CSS</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="quick-menu">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#styling-text">Styling Text</a></li>
+            </ul>
+        </div>
+        <div id="header">
+            <img src="./img/header-image.jpg" alt="Header Image">
+            <div id="profile">
+                <div id="profile-image">
+                    <img src="./img/headshot.png" alt="headshot">
+                </div>
+            <h2>by<br>T Werstlein</h2>
+            </div>
+        </div>
+        <div id="introduction">
+            <h1>CSS</h1>
+            <p>Welcome to the dedicated CSS section. 
+                This page contains all of the CSS design styles that I have learned.
+                How to add styling using element tags, ID's, and classes to reach a 
+                desired look and feel to a webpage helps a user understand what the
+                company/organization stand for and do.
+            </p>
+        </div>
+        <div id="myStyle" class="section">
+            <h1>Styling Text with CSS</h1>
+            <p>Styling text is an important part of designing a website. The way the 
+                text looks can affect the reader. If the text color blends with the 
+                background color it can be difficult to read. If the text size is too
+                small or too large it can also be difficult for the reader. Finding a
+                balance between branding and functionallity can be difficult.
+            </p>
+            <div class="example">
+                <p style="color: #1998E2; font-size: 20px; line-height: 24px; text-align: center; border: 1px solid black; border-radius: 50px;">
+                This is an example of some styled text.</p>
+            </div>
+            <input class="code-show-button" type="button" onclick="showCode('myStyle')" value="Show Code">
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

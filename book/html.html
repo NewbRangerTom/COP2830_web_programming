@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>How to build a website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="navigation">
+            <div id="navigation-inside">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="html.html">HTML</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="quick-menu">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#forms">Forms</a></li>
+            </ul>
+        </div>
+        <div id="header">
+            <img src="./img/header-image.jpg" alt="Header Image">
+            <div id="profile">
+                <div id="profile-image">
+                    <img src="./img/headshot.png" alt="headshot">
+                </div>
+            <h2>by<br>T Werstlein</h2>
+            </div>
+        </div>
+        <div id="introduction">
+            <h1>HTML</h1>
+            <p>Welcome to the dedicated HTML section. 
+                This page contains all of the HTML elements that I have 
+                understood and used so far on my journey into web design.
+            </p>
+        </div>
+        <div id="tables" class="section">
+            <h1>Tables</h1>
+            <p>Tables are good for displaying row data or organizing content in
+                a tabular format.
+            </p>
+            <div class="example">
+                <table>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                    </tr>
+                    <tr>
+                        <td>Row 1 data 1</td>
+                        <td>Row 1 data 2</td>
+                        <td>Row 1 data 3</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2 data 1</td>
+                        <td>Row 2 data 2</td>
+                        <td>Row 2 data 3</td>
+                    </tr>
+                </table>
+            </div>
+            <input class="code-show-button" type="button" onclick="showCode('tables')" value="Show Code">
+        </div>
+        <div id="forms" class="section">
+            <h1>Forms</h1>
+            <p>Forms provide a means for users to provide information to be stored in a server, or to request
+                information from a server.
+            </p>
+            <div class="example">
+                <form>
+                    <input type="text" name="name" placeholder="name"><br>
+                    <input type="text" name="email" placeholder="email"><br>
+                    <input type="submit" value="Submit"><br>
+                </form>
+            </div>
+            <input class="code-show-button" type="button" onclick="showCode('forms')" value="Show Code">
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

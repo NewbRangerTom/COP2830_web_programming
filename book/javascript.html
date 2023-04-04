@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>How to build a website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="navigation">
+            <div id="navigation-inside">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html.html">HTML</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                    <li class="active"><a href="javascript.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="quick-menu">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#loops">Loops</a></li>
+            </ul>
+        </div>
+        <div id="header">
+            <img src="./img/header-image.jpg" alt="Header Image">
+            <div id="profile">
+                <div id="profile-image">
+                    <img src="./img/headshot.png" alt="headshot">
+                </div>
+            <h2>by<br>T Werstlein</h2>
+            </div>
+        </div>
+        <div id="introduction">
+            <h1>JavaScript</h1>
+            <p>Welcome to the dedicated JavaScript section. 
+                This page contains all of the JavaScript that I have 
+                understood and used so far on my journey into web design.
+            </p>
+        </div>
+        <div id="loops" class="section">
+            <h1>for loops</h1>
+            <p>In programming, being able to perform a tast or set of instructions 
+                repeatedly is an important function. All major programming languages
+                have "for" loops. A "for" loop runs based on a given condition.
+            </p>
+            <div class="example">
+                <script>
+                    function forLoop(){
+                        for(var i = 1; i <= 10; i++){
+                            console.log('The loop has run ' + i + ' times.')
+                        }
+                    }
+                </script>
+                <input class="run-javascript" type="button" onclick="forLoop()" value="Run for loop">
+            </div>
+            <input class="code-show-button" type="button" onclick="showCode('loops')" value="Show Code">
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

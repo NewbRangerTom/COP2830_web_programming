@@ -1,9 +1,11 @@
+
 body {
     margin: 0;
     background-color: #eee;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* navigation section */
 #navigation {
     position: fixed;
     z-index: 10;
@@ -46,6 +48,46 @@ a:hover, a:active {
     font-weight: bold;
 }
 
+/* headshot image section */
+#header {
+    width: 100%;
+    overflow: hidden;
+}
+
+#header img {
+    width: 100%;
+    height: auto;
+}
+
+#profile {
+    width: 100px;
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    margin-left: -50px;
+    top: 60px;
+}
+
+#profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+}
+
+#profile-image img {
+    width: 100%;
+    height: auto;
+}
+
+#profile h2 {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* introduction section */
 #introduction {
     width: 600px;
     padding: 20px;
@@ -53,6 +95,101 @@ a:hover, a:active {
     border: 1px solid #ccc;
     border-radius: 10px;
     margin: 20px auto;
-    position: relative;
-    top: 40px;
+}
+
+h1 {
+    color: #1998E2;
+    font-size: 22px;
+    text-align: center;
+}
+
+p {
+    color: #777;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+/* tables and forms sections */
+.section {
+    width: 600px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.example {
+    padding: 10px;
+    background-color: #fcfcfc;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+.code-show-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    background-color: #1998E2;
+    color: white;
+    font-size: 14px;
+}
+
+.code-show-button:hover {
+    background-color: #198acc;
+    cursor: pointer;
+}
+
+.example-code {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+form, input[type=text], input[type=submit] {
+    width: 300px;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+/* quick links section */
+#quick-menu {
+    position: fixed;
+    z-index: 4;
+    left: 20px;
+    top: 60px;
+    width: 200px;
+    height: auto;
+    background-color: white;
+    padding: 20px 10px;
+}
+
+#quick-menu h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+}
+
+.run-javascript {
+    margin: 0 auto;
+    width: 200px;
+    display: block;
 }
