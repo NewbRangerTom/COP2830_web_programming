@@ -5,15 +5,26 @@
     Date:		April 2023
 */
 
+// Global Variables (used in multiple functions)
+const W = window.screen.availWidth;
+const H = window.screen.availHeight;
+let head = document.getElementById('heading');
+let out = document.getElementById('output');
+let myCanvas = document.getElementById('myCanvas');
+
 // M6A1 Project Constraints F-a
-// Browser Test
+
+// function to "hide" the canvas div element
+// -- closes the canvas after selecting a different function after showing the canvas
 function setCanvasToZero(){
-	document.getElementById('myCanvas').style.width = 0;
-	document.getElementById('myCanvas').style.height = 0;
+	myCanvas.style.width = 0;
+	myCanvas.style.height = 0;
 }
 
+// Browser Test
 function browserTest(){
-	document.getElementById("heading").innerHTML = String(`<h1>Browser Information</h1>`);
+	// document.getElementById("heading").innerHTML = String(`<h1>Browser Information</h1>`);
+	head.innerHTML = String(`<h1>Browser Information</h1>`);
 	outputText = String(`<ul><li>Browser Codename: ${navigator.appCodeName}</li>`);
 	outputText += String(`<li>Browser Name: ${navigator.appName}</li>`);
 	outputText += String(`<li>Browser Version: ${navigator.appVersion}</li>`);
@@ -22,14 +33,14 @@ function browserTest(){
 	outputText += String(`<li>Browser Online: ${navigator.onLine}</li>`);
 	outputText += String(`<li>Platform: ${navigator.platform}</li>`);
 	outputText += String(`<li>User-agent Header: ${navigator.userAgent}</li></ul>`);
-	document.getElementById("output").innerHTML = outputText;
+	out.innerHTML = outputText;
 	setCanvasToZero();
 }
 
 // M6A1 Project Constraints F-b
 // HTML Feature Test
 function featureTest(){
-	document.getElementById("heading").innerHTML = String(`<h1>Compatible HTML5 Features</h1>`);
+	head.innerHTML = String(`<h1>Compatible HTML5 Features</h1>`);
 	var list = '<ul>';
 	var inputs = ["Search", "Number", "Range", "Color", "Tele", "Url", "Email", "Date", "Month", "Week", "Time", "Datetime", "Datetime-local"];
 	var inp = document.createElement("input");
@@ -42,7 +53,7 @@ function featureTest(){
 		}
 	}
 	list += '</ul>';
-	document.getElementById("output").innerHTML = list;
+	out.innerHTML = list;
 	setCanvasToZero();
 }
 
@@ -50,54 +61,48 @@ function featureTest(){
 // Mobile Tests
 function resolution(){
 	let testInfo = String(`<h1>Mobile Screen Information<span id="h3"> - Screen Resolution</span></h1>`);
-	document.getElementById("heading").innerHTML = testInfo;
-	const W = window.screen.availWidth;
-	const H = window.screen.availHeight;
+	head.innerHTML = testInfo;
 	let testOutput = String(`<ul><li>Width: &nbsp${W}</li><li>Height: ${H}</li></ul>`);
-	document.getElementById("output").innerHTML = testOutput;
+	out.innerHTML = testOutput;
 	setCanvasToZero();
 }
 
 function orientation(){
 	let pageTitle = `<h1>Mobile Screen Information<span id="h3"> - Orientation</span></h1>`;
-	document.getElementById("heading").innerHTML = pageTitle;
+	head.innerHTML = pageTitle;
 	let O = screen.orientation.type;
-	document.getElementById("output").innerHTML = `<ul><li>Orientation: ${O}</li></ul>`;
+	out.innerHTML = `<ul><li>Orientation: ${O}</li></ul>`;
 	setCanvasToZero();
 }
 
 // M6A1 Project Constraints F-d
 // Canvas Tests
 function genSup(){
-	document.getElementById("heading").innerHTML = String(`<h1>Canvas General Support</h1>`);
+	head.innerHTML = String(`<h1>Canvas General Support</h1>`);
 	results = !!document.createElement('canvas').getContext;
-	document.getElementById("output").innerHTML = String(`<p>Canvas Support: <span id="uc">${results}</span></p>`);
+	out.innerHTML = String(`<p>Canvas Support: <span id="uc">${results}</span></p>`);
 	setCanvasToZero();
 }
 
 function textSup(){
-	document.getElementById("heading").innerHTML = String(`<h1>Canvas Text Support</h1>`);
-	var cnvs = document.getElementById("myCanvas");
-	var ctxt = cnvs.getContext("2d");
+	head.innerHTML = String(`<h1>Canvas Text Support</h1>`);
+	var ctxt = myCanvas.getContext("2d");
 	supportsText = typeof ctxt.fillText;
 	if (supportsText == 'function'){
 		outputText = "You have chosen your browser wisely, for it <span id='green';>DOES</span> supports canvas text.";
 	} else {
 		outputText = "You have chosen your browser poorly, for it does <span id='red';>NOT</span> support canvas text.";
 	}
-	document.getElementById("output").innerHTML = String(`<p>${outputText}</p>`);
+	out.innerHTML = String(`<p>${outputText}</p>`);
 	setCanvasToZero();
 }
 
 function drawCanvas(){
-	document.querySelector("#heading").innerHTML = String(`<h1>Draw Canvas</h1>`);
-	document.getElementById('output').innerHTML = "";
-	const W = window.screen.availWidth;
-	const H = window.screen.availHeight;
-	const can = document.querySelector("#myCanvas");
-	can.style.width = String(`${W}px`);
-	can.style.height = String(`${H}px`);
-	const con = can.getContext("2d");
+	head.innerHTML = String(`<h1>Draw Canvas</h1>`);
+	out.innerHTML = "";
+	myCanvas.style.width = String(`${W}px`);
+	myCanvas.style.height = String(`${H}px`);
+	const con = myCanvas.getContext("2d");
 	const img = new Image();
 	img.addEventListener("load", 
 		() => {
