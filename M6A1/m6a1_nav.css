@@ -2,7 +2,7 @@
     Assignment: M6A1
     File name:	m6a1_nav.css
     Author:		Thomas Werstlein
-    Date:		April 2023
+    Date:		11 April 2023
 */
 ol {background-color: linear-gradient( rgb(0, 0, 0), rgb(228, 194, 43), rgb(226, 3, 3));}
 /* main navbar */
@@ -31,6 +31,10 @@ ol {background-color: linear-gradient( rgb(0, 0, 0), rgb(228, 194, 43), rgb(226,
     padding: 0 0 8px;
     float: left;
     list-style: none;     
+}
+
+#nav li button img {
+    background-color: inherit;
 }
 
 /* top level buttons */

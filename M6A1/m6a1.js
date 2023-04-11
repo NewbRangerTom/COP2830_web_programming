@@ -2,7 +2,7 @@
     Assignment: M6A1
     File name:	m6a1.js
     Author:		Thomas Werstlein
-    Date:		April 2023
+    Date:		11 April 2023
 */
 
 // Global Variables (used in multiple functions)

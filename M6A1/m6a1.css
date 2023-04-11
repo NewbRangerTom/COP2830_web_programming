@@ -2,7 +2,7 @@
     Assignment: M6A1
     File name:	m6a1.css
     Author:		Thomas Werstlein
-    Date:		April 2023
+    Date:		11 April 2023
 */
 
 /*
@@ -43,6 +43,12 @@ body {
 
 #heading h1 span#h3 {
     font-size: .9em;
+}
+
+#heading p#index {
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 #output {
