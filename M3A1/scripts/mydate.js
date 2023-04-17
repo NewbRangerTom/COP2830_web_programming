@@ -2,6 +2,7 @@ function GetClock(){
     tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday");
     tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
     tline = new String("Current Date/Time:&nbsp;&nbsp;");
+    ds = '&nbsp&nbsp'
 
     day = new Date();
     nday = day.getDay();
@@ -22,7 +23,9 @@ function GetClock(){
     if(nmin <= 9){nmin = "0" + nmin;}
     if(nsec <= 9){nsec = "0" + nsec;}
 
-    document.getElementById('GetClock').innerHTML = ""+tline+" "+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+    // document.getElementById('GetClock').innerHTML = ""+tline+" "+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+    let timeString = String(`${tline}${tday[nday]},${ds}${tmonth[nmonth]}${ds}${ndate},${ds}${nyear}${ds}${nhour}:${nmin}:${nsec}${ap}`)
+    document.getElementById('GetClock').innerHTML = timeString;
     setTimeout("GetClock()", 1000);
 }
 window.onload = GetClock;
