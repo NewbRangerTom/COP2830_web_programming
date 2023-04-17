@@ -8,6 +8,7 @@
 // Global Variables (used in multiple functions)
 const W = window.screen.availWidth;
 const H = window.screen.availHeight;
+let O = screen.orientation.type;
 let head = document.getElementById('heading');
 let out = document.getElementById('output');
 let myCanvas = document.getElementById('myCanvas');
@@ -21,7 +22,9 @@ function setCanvasToZero(){
 	myCanvas.style.height = 0;
 }
 
-// Browser Test
+/* Browser Test
+  -- changes the heading and concatinates an unordered list where the list items
+  -- are populated with calls to the various navigator api calls */
 function browserTest(){
 	head.innerHTML = String(`<h1>Browser Information</h1>`);
 	outputText = String(`<ul><li>Browser Codename: ${navigator.appCodeName}</li>`);
@@ -37,12 +40,14 @@ function browserTest(){
 }
 
 // M6A1 Project Constraints F-b
-// HTML Feature Test
+/* HTML Feature Test
+ -- changes heading and loops through a list containing the various forms of input
+ -- then check the return of the query and disploays the result */
 function featureTest(){
 	head.innerHTML = String(`<h1>Compatible HTML5 Features</h1>`);
-	var list = '<ul>';
 	var inputs = ["Search", "Number", "Range", "Color", "Tele", "Url", "Email", "Date", "Month", "Week", "Time", "Datetime", "Datetime-local"];
 	var inp = document.createElement("input");
+	var list = '<ul>';
 	for (var i = 0; i < inputs.length; i++){
 		inp.setAttribute("type", inputs[i]);
 		if (inp.type == "text"){
@@ -57,25 +62,26 @@ function featureTest(){
 }
 
 // M6A1 Project Constraints F-c
-// Mobile Tests
+/* Mobile Tests
+-- changes the heading and checks the window available width and height then displays the results */ 
 function resolution(){
-	let testInfo = String(`<h1>Mobile Screen Information<span id="h3"> - Screen Resolution</span></h1>`);
-	head.innerHTML = testInfo;
-	let testOutput = String(`<ul><li>Width: &nbsp${W}</li><li>Height: ${H}</li></ul>`);
-	out.innerHTML = testOutput;
+	head.innerHTML = String(`<h1>Mobile Screen Information<span id="h3"> - Screen Resolution</span></h1>`);
+
+	out.innerHTML = String(`<ul><li>Width: &nbsp${W}</li><li>Height: ${H}</li></ul>`);
 	setCanvasToZero();
 }
 
+/* -- changes the heading and checks the screen orientation then displays the result */ 
 function orientation(){
-	let pageTitle = `<h1>Mobile Screen Information<span id="h3"> - Orientation</span></h1>`;
-	head.innerHTML = pageTitle;
-	let O = screen.orientation.type;
+	head.innerHTML = `<h1>Mobile Screen Information<span id="h3"> - Orientation</span></h1>`;
+
 	out.innerHTML = `<ul><li>Orientation: ${O}</li></ul>`;
 	setCanvasToZero();
 }
 
 // M6A1 Project Constraints F-d
-// Canvas Tests
+/* Canvas Tests
+-- changes the heading and checks the browser for canvas support then displays the results */ 
 function genSup(){
 	head.innerHTML = String(`<h1>Canvas General Support</h1>`);
 	results = !!document.createElement('canvas').getContext;
@@ -83,6 +89,7 @@ function genSup(){
 	setCanvasToZero();
 }
 
+/* -- changes the heading and checks the browser for canvas text support then displays the results */ 
 function textSup(){
 	head.innerHTML = String(`<h1>Canvas Text Support</h1>`);
 	var ctxt = myCanvas.getContext("2d");
@@ -96,6 +103,7 @@ function textSup(){
 	setCanvasToZero();
 }
 
+/* -- changes the heading then draws an images to the canvas div section */ 
 function drawCanvas(){
 	head.innerHTML = String(`<h1>Draw Canvas</h1>`);
 	out.innerHTML = "";
