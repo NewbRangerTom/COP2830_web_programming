@@ -23,7 +23,6 @@ function setCanvasToZero(){
 
 // Browser Test
 function browserTest(){
-	// document.getElementById("heading").innerHTML = String(`<h1>Browser Information</h1>`);
 	head.innerHTML = String(`<h1>Browser Information</h1>`);
 	outputText = String(`<ul><li>Browser Codename: ${navigator.appCodeName}</li>`);
 	outputText += String(`<li>Browser Name: ${navigator.appName}</li>`);
