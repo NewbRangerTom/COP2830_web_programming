@@ -26,7 +26,9 @@ function setCanvasToZero(){
   -- changes the heading and concatinates an unordered list where the list items
   -- are populated with calls to the various navigator api calls */
 function browserTest(){
+	// heading div
 	head.innerHTML = String(`<h1>Browser Information</h1>`);
+	// output div
 	outputText = String(`<ul><li>Browser Codename: ${navigator.appCodeName}</li>`);
 	outputText += String(`<li>Browser Name: ${navigator.appName}</li>`);
 	outputText += String(`<li>Browser Version: ${navigator.appVersion}</li>`);
@@ -36,6 +38,7 @@ function browserTest(){
 	outputText += String(`<li>Platform: ${navigator.platform}</li>`);
 	outputText += String(`<li>User-agent Header: ${navigator.userAgent}</li></ul>`);
 	out.innerHTML = outputText;
+	// canvas div
 	setCanvasToZero();
 }
 
@@ -44,7 +47,9 @@ function browserTest(){
  -- changes heading and loops through a list containing the various forms of input
  -- then check the return of the query and disploays the result */
 function featureTest(){
+	// heading div
 	head.innerHTML = String(`<h1>Compatible HTML5 Features</h1>`);
+	// output div
 	var inputs = ["Search", "Number", "Range", "Color", "Tele", "Url", "Email", "Date", "Month", "Week", "Time", "Datetime", "Datetime-local"];
 	var inp = document.createElement("input");
 	var list = '<ul>';
@@ -58,6 +63,7 @@ function featureTest(){
 	}
 	list += '</ul>';
 	out.innerHTML = list;
+	// canvas div
 	setCanvasToZero();
 }
 
@@ -65,17 +71,21 @@ function featureTest(){
 /* Mobile Tests
 -- changes the heading and checks the window available width and height then displays the results */ 
 function resolution(){
+	// heading div
 	head.innerHTML = String(`<h1>Mobile Screen Information<span id="h3"> - Screen Resolution</span></h1>`);
-
+	// output div
 	out.innerHTML = String(`<ul><li>Width: &nbsp${W}</li><li>Height: ${H}</li></ul>`);
+	// canvas div
 	setCanvasToZero();
 }
 
 /* -- changes the heading and checks the screen orientation then displays the result */ 
 function orientation(){
+	// heading div
 	head.innerHTML = `<h1>Mobile Screen Information<span id="h3"> - Orientation</span></h1>`;
-
+	// output div
 	out.innerHTML = `<ul><li>Orientation: ${O}</li></ul>`;
+	// canvas div
 	setCanvasToZero();
 }
 
@@ -83,15 +93,20 @@ function orientation(){
 /* Canvas Tests
 -- changes the heading and checks the browser for canvas support then displays the results */ 
 function genSup(){
+	// heading div
 	head.innerHTML = String(`<h1>Canvas General Support</h1>`);
+	// output div
 	results = !!document.createElement('canvas').getContext;
 	out.innerHTML = String(`<p>Canvas Support: <span id="uc">${results}</span></p>`);
+	// canvas div
 	setCanvasToZero();
 }
 
 /* -- changes the heading and checks the browser for canvas text support then displays the results */ 
 function textSup(){
+	// heading div
 	head.innerHTML = String(`<h1>Canvas Text Support</h1>`);
+	// output div
 	var ctxt = myCanvas.getContext("2d");
 	supportsText = typeof ctxt.fillText;
 	if (supportsText == 'function'){
@@ -100,13 +115,17 @@ function textSup(){
 		outputText = "You have chosen your browser poorly, for it does <span id='red';>NOT</span> support canvas text.";
 	}
 	out.innerHTML = String(`<p>${outputText}</p>`);
+	// canvas div
 	setCanvasToZero();
 }
 
 /* -- changes the heading then draws an images to the canvas div section */ 
 function drawCanvas(){
+	// heading div
 	head.innerHTML = String(`<h1>Draw Canvas</h1>`);
+	// output div
 	out.innerHTML = "";
+	// canvas div
 	myCanvas.style.width = String(`${W}px`);
 	myCanvas.style.height = String(`${H}px`);
 	const con = myCanvas.getContext("2d");
