@@ -10,12 +10,12 @@ that build upon concepts from each previous assignment.
 
 ### Course Structure
 - HTML
-* basic html document requirements
-* understanding element tags
+ * basic html document requirements
+ * understanding element tags
 - CSS
-* styling elements
-* using id's and classes
+ * styling elements
+ * using id's and classes
 - JavaScript
-* variables
-* creating functions
-* calling functions with events
+ * variables
+ * creating functions
+ * calling functions with events
