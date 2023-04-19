@@ -5,7 +5,7 @@
     Date:		11 April 2023
 */
 
-// Global Variables (used in multiple functions)
+// Global Variables
 const W = window.screen.availWidth;
 const H = window.screen.availHeight;
 let O = screen.orientation.type;
