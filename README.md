@@ -1,6 +1,6 @@
 # web_programming
 
-This repo is to document my learning and understanding of Front-End web development.
+This repo documents my learning and understanding of Front-End web development.
 The subfolders represent the assignments from the COP2830 Web Peogramming course at
 Indian River State College on Florida's Treasure Coast.
 
