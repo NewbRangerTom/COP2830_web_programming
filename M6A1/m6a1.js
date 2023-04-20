@@ -6,12 +6,12 @@
 */
 
 // Global Variables
-const W = window.screen.availWidth;
-const H = window.screen.availHeight;
-let O = screen.orientation.type;
-let head = document.getElementById('heading');
-let out = document.getElementById('output');
-let myCanvas = document.getElementById('myCanvas');
+const W = window.screen.availWidth;					// get the screen width
+const H = window.screen.availHeight;				// get the screen height
+let O = screen.orientation.type;					// get the screen orientation
+let head = document.getElementById('heading');		// shorthard variable for heading
+let out = document.getElementById('output');		// shorthand variable for output
+let myCanvas = document.getElementById('myCanvas');	// shorthand variable for myCanvas
 
 // M6A1 Project Constraints F-a
 
