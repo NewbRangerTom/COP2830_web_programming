@@ -18,7 +18,7 @@ const con = myCanvas.getContext("2d");
 // M6A1 Project Constraints F-a
 
 // function to "hide" the canvas div element
-// -- closes the canvas after selecting a different function after showing the canvas
+// -- effectively closes the canvas after selecting a different function after showing the canvas
 function clearCanvas(){
 	// myCanvas.style.width = 0;
 	// myCanvas.style.height = 0;
@@ -136,10 +136,12 @@ function drawCanvas(){
 	// create an image object (functionally equialent to document.createElement('img'))
 	// reference = https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image
 	const img = new Image();
-	// because drawImage() cannot be called before the image is loaded, I used an eventListener to 
-	// wait for the image to load. reference = https://www.w3schools.com/tags/canvas_drawimage.asp
-	// Here I also use an arrow function which is simply a shorthard way to write "function () {}"
-	// for more on eventListener's check out: https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+/* 
+	because drawImage() cannot be called before the image is loaded, I used an eventListener to 
+	wait for the image to load. reference = https://www.w3schools.com/tags/canvas_drawimage.asp
+	Here I also use an arrow function which is simply a shorthard way to write "function () {}"
+	for more on eventListener's check out: https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+*/
 	img.addEventListener("load", 
 		() => {
 			// set image height and width reduced to 28% of actual size
