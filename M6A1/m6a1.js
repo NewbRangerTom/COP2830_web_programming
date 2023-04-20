@@ -12,14 +12,17 @@ let O = screen.orientation.type;					// get the screen orientation
 let head = document.getElementById('heading');		// shorthard variable for heading
 let out = document.getElementById('output');		// shorthand variable for output
 let myCanvas = document.getElementById('myCanvas');	// shorthand variable for myCanvas
+// create a 2 dimentional canvas object (https://www.w3schools.com/graphics/canvas_reference.asp)
+const con = myCanvas.getContext("2d");
 
 // M6A1 Project Constraints F-a
 
 // function to "hide" the canvas div element
 // -- closes the canvas after selecting a different function after showing the canvas
-function setCanvasToZero(){
-	myCanvas.style.width = 0;
-	myCanvas.style.height = 0;
+function clearCanvas(){
+	// myCanvas.style.width = 0;
+	// myCanvas.style.height = 0;
+	con.clearRect(0, 0, W, H);
 }
 
 /* Browser Test
@@ -39,7 +42,7 @@ function browserTest(){
 	outputText += String(`<li>User-agent Header: ${navigator.userAgent}</li></ul>`);
 	out.innerHTML = outputText;
 	// canvas div
-	setCanvasToZero();
+	clearCanvas();
 }
 
 // M6A1 Project Constraints F-b
@@ -64,7 +67,7 @@ function featureTest(){
 	list += '</ul>';
 	out.innerHTML = list;
 	// canvas div
-	setCanvasToZero();
+	clearCanvas();
 }
 
 // M6A1 Project Constraints F-c
@@ -76,7 +79,7 @@ function resolution(){
 	// output div
 	out.innerHTML = String(`<ul><li>Width: &nbsp${W}</li><li>Height: ${H}</li></ul>`);
 	// canvas div
-	setCanvasToZero();
+	clearCanvas();
 }
 
 /* -- changes the heading and checks the screen orientation then displays the result */ 
@@ -86,7 +89,7 @@ function orientation(){
 	// output div
 	out.innerHTML = `<ul><li>Orientation: ${O}</li></ul>`;
 	// canvas div
-	setCanvasToZero();
+	clearCanvas();
 }
 
 // M6A1 Project Constraints F-d
@@ -99,7 +102,7 @@ function genSup(){
 	results = !!document.createElement('canvas').getContext;
 	out.innerHTML = String(`<p>Canvas Support: <span id="uc">${results}</span></p>`);
 	// canvas div
-	setCanvasToZero();
+	clearCanvas();
 }
 
 /* -- changes the heading and checks the browser for canvas text support then displays the results */ 
@@ -116,7 +119,7 @@ function textSup(){
 	}
 	out.innerHTML = String(`<p>${outputText}</p>`);
 	// canvas div
-	setCanvasToZero();
+	clearCanvas();
 }
 
 /* -- changes the heading then draws an images to the canvas div section */ 
@@ -130,8 +133,6 @@ function drawCanvas(){
 	// get the canvas height and width
 	myCanvas.style.width = String(`${W}px`);
 	myCanvas.style.height = String(`${H}px`);
-	// create a 2 dimentional canvas object (https://www.w3schools.com/graphics/canvas_reference.asp)
-	const con = myCanvas.getContext("2d");
 	// create an image object (functionally equialent to document.createElement('img'))
 	// reference = https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image
 	const img = new Image();
