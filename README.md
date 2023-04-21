@@ -1,4 +1,4 @@
-# web_programming
+# COP2830_web_programming
 
 This repo documents my learning and understanding of Front-End web development.
 The subfolders represent the assignments from the COP2830 Web Peogramming course at
