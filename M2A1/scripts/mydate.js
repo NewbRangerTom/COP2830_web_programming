@@ -3,14 +3,14 @@ function GetClock(){
     tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
     tline = new String("Current Date/Time:&nbsp;&nbsp;");
 
-    day = new Date();
-    nday = day.getDay();
-    nmonth = day.getMonth();
-    ndate = day.getDate();
-    nyear = day.getYear();
-    nhour = day.getHours();
-    nmin = day.getMinutes();
-    nsec = day.getSeconds();
+    d = new Date();
+    nday = d.getDay();
+    nmonth = d.getMonth();
+    ndate = d.getDate();
+    nyear = d.getYear();
+    nhour = d.getHours();
+    nmin = d.getMinutes();
+    nsec = d.getSeconds();
 
     if(nyear < 1000) nyear = nyear + 1900;
 
