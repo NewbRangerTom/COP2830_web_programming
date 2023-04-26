@@ -130,9 +130,6 @@ function drawCanvas(){
 	out.innerHTML = "";
 	
 	// canvas div
-	// get the canvas height and width
-	myCanvas.style.width = String(`${W}px`);
-	myCanvas.style.height = String(`${H}px`);
 	// create an image object (functionally equialent to document.createElement('img'))
 	// reference = https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image
 	const img = new Image();
@@ -144,9 +141,13 @@ function drawCanvas(){
 */
 	img.addEventListener("load", 
 		() => {
-			// set image height and width reduced to 28% of actual size
-			let img_X = img.width * .28; 
-			let img_Y = img.height * .28;
-			con.drawImage(img, 2, 15, img_X, img_Y);}, false);
+			// create variables for image height and width
+			let img_X = img.width; 
+			let img_Y = img.height;
+			// set the canvas height and width
+			myCanvas.style.width = String(`${img_X}px`);
+			myCanvas.style.height = String(`${img_Y}px`);
+			// draw image height and width reduced to 30% of actual size
+			con.drawImage(img, 2, 15, img_X * .3, img_Y * .3);}, false);
 	img.src = "mad-max-fury-road-kritik.jpg";
 }

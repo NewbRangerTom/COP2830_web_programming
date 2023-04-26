@@ -94,8 +94,8 @@ body {
 
 #myCanvas {
     position: relative;
-    top: 55px;
-    left: 0;
+    top: 85px;
+    left: 12%;
     margin-top: -95px;
     width: 0; 
     height: 0;
