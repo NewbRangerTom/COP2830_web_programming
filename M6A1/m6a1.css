@@ -62,12 +62,26 @@ body {
     z-index: 1;
 }
 
+#output ul {
+    position: absolute;
+    left: 20px;
+}
+
 #output li {
     line-height: 1.5em;
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
+    padding: 0 1em;
 }
+
+#output li::marker {
+    color: #000000;
+    font-size: 1em;
+    font-weight: 900;
+    content: '>>>----->';
+}
+
 
 #output p {
     font-size: 1.5em;
