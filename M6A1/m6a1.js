@@ -56,12 +56,21 @@ function featureTest(){
 	var inputs = ["Search", "Number", "Range", "Color", "Tele", "Url", "Email", "Date", "Month", "Week", "Time", "Datetime", "Datetime-local"];
 	var inp = document.createElement("input");
 	var list = '<ul>';
-	for (var i = 0; i < inputs.length; i++){
+	/* for (var i = 0; i < inputs.length; i++){
 		inp.setAttribute("type", inputs[i]);
 		if (inp.type == "text"){
 			list += String(`<li>${inputs[i]}: NO</li>`);
 		} else {
 			list += String(`<li>${inputs[i]}: YES</li>`);
+		}
+	} */
+	for (let input of inputs){
+		inp.setAttribute("type", input);
+		if (inp.type == "text"){
+			list += String(`<li>${input}: NO</li>`);
+		}
+		else {
+			list += String(`<li>${input}: Yes</li>`);
 		}
 	}
 	list += '</ul>';
